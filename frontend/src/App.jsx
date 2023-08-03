@@ -9,6 +9,7 @@ import Dropdown from "./components/layout/navbar/dropdown";
 import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
+import ContentAdminFinal from "./components/content/homeContentFinal";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<HomeLogin />} />
+        <Route path="/home" element={<HomeLogin />} />
         <Route path="/login" />
         
         //Route Components 
@@ -27,7 +28,7 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
-
+        <Route path="/content-home" element={<ContentAdminFinal />} />
       </Routes>
     </BrowserRouter>
   );
