@@ -9,7 +9,7 @@ import Dropdown from "./components/layout/navbar/dropdown";
 import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
-
+import Allkategori from "./pages/allkategori";
 
 function App() {
   return (
@@ -17,9 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<HomeLogin />} />
+        <Route path="/All" element={<Allkategori />} />
         <Route path="/login" />
-        
-        //Route Components 
+        //Route Components
         <Route path="/profilmenu" element={<ProfileMenu />} />
         <Route path="/navigationBar" element={<NavigationBar />} />
         <Route path="/toogle-notif" element={<Toogle_notif />} />
@@ -27,7 +27,6 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
-
       </Routes>
     </BrowserRouter>
   );
