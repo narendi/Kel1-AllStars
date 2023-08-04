@@ -28,7 +28,7 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
-        <Route path="/content-home" element={<ContentAdminFinal />} />
+        <Route path="/content-home" element={<ContentAdminFinal />} /> 
       </Routes>
     </BrowserRouter>
   );
