@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../components/kontenAll/card";
+import Card from "../components/kontenAll/card.jsx";
 import Image1 from "/assets/hacker.jpg";
 import Image2 from "/assets/fotopemandangan.jpg";
 import Navbarguest from "../components/layout/navbar/navbarguest";
@@ -31,6 +31,16 @@ const Allkategori = () => {
       title: "Kategori E",
       description: "Deskripsi Kategori",
     },
+    {
+      image: Image2,
+      title: "Kategori f",
+      description: "Deskripsi Kategori",
+    },
+    {
+      image: Image2,
+      title: "Kategori g",
+      description: "Deskripsi Kategori",
+    },
   ];
 
   return (
@@ -45,9 +55,11 @@ const Allkategori = () => {
             enim quis ligula laoreet convallis.
           </p>
           <div className="flex  justify-start mt-10">
-            {cards.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
+            <div className="flex flex-wrap">
+              {cards.map((card, index) => (
+                <Card key={index} {...card} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
