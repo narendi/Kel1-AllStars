@@ -1,18 +1,16 @@
 import React from "react";
 
-const Card = ({ image, title, description }) => {
+const Card = ({ title, description, image }) => {
   return (
-    <div className="pr-6 ">
-      <div className="bg-white shadow-md rounded-lg  p-8">
-        <div className="pr-6 ">
-          <div className="">
-            <img className="w-20 h-20 rounded-full" src={image} />
-          </div>
-          <div className="mt-16 mb-11 text-left">
-            <h2 className="text-xl font-semibold mb-4">{title}</h2>
-            <p className="text-gray-600">{description}</p>
-          </div>
-        </div>
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden w-[239px] mr-5 h-[290px] mr-5 mt-5">
+      <img
+        className="w-20 h-20 mt-5 ml-5 rounded-full object-cover"
+        src={image}
+        alt="Card Image"
+      />
+      <div className="p-4 mt-12">
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-gray-600">{description}</p>
       </div>
     </div>
   );
