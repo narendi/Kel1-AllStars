@@ -18,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<HomeLogin />} />
         <Route path="/All" element={<Allkategori />} />
+        <Route path="/allkategl" element={<Allkategori />} />
         <Route path="/login" />
         //Route Components
         <Route path="/profilmenu" element={<ProfileMenu />} />
