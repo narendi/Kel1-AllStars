@@ -1,5 +1,5 @@
-import React from 'react';
-import { Layout, Space, Dropdown } from 'antd';
+import React, { useState } from 'react';
+import { Layout, Space, Dropdown, Checkbox, Row, Col } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -11,30 +11,43 @@ const siderStyle = {
   height: '38rem',
 };
 
+const dropdownContentStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+};
+
 const items = [
   {
-    label: <a href="">Kategori 1</a>,
+    label: <a className='text-white ml-6' href="#">Kategori 1</a>,
     key: '0',
   },
   {
-    label: <a href="">Kategori 3</a>,
+    label: <a className='text-white ml-6' href="#">Kategori 3</a>,
     key: '1',
   },
   {
-    label: <a href="">Kategori 3</a>,
+    label: <a className='text-white ml-6' href="#">Kategori 3</a>,
     key: '2',
   },
   {
-    label: <a href="">Kategori 4</a>,
+    label: <a className='text-white ml-6' href="#">Kategori 4</a>,
     key: '3',
   },
   {
-    label: <a href="">Kategori 5</a>,
+    label: <a className='text-white ml-6' href="#">Kategori 5</a>,
     key: '4',
   },
 ];
 
 const Sbar = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  const handleCategoryClick = (itemKey) => {
+    setSelectedCategory(itemKey === selectedCategory ? null : itemKey);
+  };
+
   return (
     <>
       <Space align="center" justify="center">
@@ -42,7 +55,22 @@ const Sbar = () => {
           <Sider style={siderStyle}>
             <div className="text-white  items-center">
               <div className="mt-4 ml-3 text-2xl">Filter</div>
-              <Dropdown menu={{ items }} trigger={['click']}>
+              <Dropdown
+                overlayStyle={dropdownContentStyle}
+                overlay={
+                  <div>
+                    {items.map((item) => (
+                      <Row key={item.key} style={{ margin: 0 }} onClick={() => handleCategoryClick(item.key)}>
+                        <Col span={1}>
+                          <Checkbox style={{ margin: 0 }} checked={item.key === selectedCategory} />
+                        </Col>
+                        <Col span={22}>{item.label}</Col>
+                      </Row>
+                    ))}
+                  </div>
+                }
+                trigger={['click']}
+              >
                 <a onClick={(e) => e.preventDefault()}>
                   <Space className="text-white mt-1  ml-9">Kategori <DownOutlined /></Space>
                 </a>
