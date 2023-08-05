@@ -5,43 +5,13 @@ import Image2 from "/assets/fotopemandangan.jpg";
 import Navbarguest from "../components/layout/navbar/navbarguest";
 
 const Allkategori = () => {
-  const cards = [
-    {
-      image: Image1,
-      title: "Kategori A",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori B",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori C",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori D",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori E",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori f",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori g",
-      description: "Deskripsi Kategori",
-    },
-  ];
+  // const cards = [
+  //   {
+  //     image: Image1,
+  //     title: "Kategori A",
+  //     description: "Deskripsi Kategori",
+  //   },
+  // ];
 
   return (
     <>
@@ -56,9 +26,7 @@ const Allkategori = () => {
           </p>
           <div className="flex  justify-start mt-10">
             <div className="flex flex-wrap">
-              {cards.map((card, index) => (
-                <Card key={index} {...card} />
-              ))}
+              <Card />
             </div>
           </div>
         </div>
