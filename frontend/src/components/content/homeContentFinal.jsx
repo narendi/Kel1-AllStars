@@ -8,8 +8,41 @@ import {
   Chip,
   Button,
 } from "@material-tailwind/react";
+// import Card from "../kontenAll/card";
+// import Image1 from "/assets/hacker.jpg";
+// import Image2 from "/assets/fotopemandangan.jpg";
+// import Navbarguest from "../components/layout/navbar/navbarguest";
 
 const ContentAdminFinal = () => {
+  // const cards = [
+  //   {
+  //     image: Image1,
+  //     title: "Kategori A",
+  //     description: "Deskripsi Kategori",
+  //   },
+  //   {
+  //     image: Image2,
+  //     title: "Kategori B",
+  //     description: "Deskripsi Kategori",
+  //   },
+  //   {
+  //     image: Image2,
+  //     title: "Kategori C",
+  //     description: "Deskripsi Kategori",
+  //   },
+  //   {
+  //     image: Image2,
+  //     title: "Kategori D",
+  //     description: "Deskripsi Kategori",
+  //   },
+  //   {
+  //     image: Image2,
+  //     title: "Kategori E",
+  //     description: "Deskripsi Kategori",
+  //   },
+  // ];
+
+
   return (
     <React.Fragment>
       <Card className="w-full max-w-[150rem] flex-row">
@@ -63,6 +96,11 @@ const ContentAdminFinal = () => {
           </a>
         </CardBody>
       </Card>
+      {/* <div className="flex  justify-start mt-10">
+            {cards.map((card, index) => (
+              <Card key={index} {...card} />
+            ))}
+          </div> */}
     </React.Fragment>
   );
 };

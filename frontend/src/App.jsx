@@ -11,6 +11,8 @@ import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
 import ContentAdminFinal from "./components/content/homeContentFinal";
 
+import Allkategori from "./pages/allkategori";
+import Card from "./components/kontenAll/card";
 
 function App() {
   return (
@@ -18,9 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<HomeLogin />} />
+        <Route path="/All" element={<Allkategori />} />
         <Route path="/login" />
-        
-        //Route Components 
+
+        //Route Components
         <Route path="/profilmenu" element={<ProfileMenu />} />
         <Route path="/navigationBar" element={<NavigationBar />} />
         <Route path="/toogle-notif" element={<Toogle_notif />} />
@@ -29,6 +32,7 @@ function App() {
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
         <Route path="/content-home" element={<ContentAdminFinal />} /> 
+        <Route path="/card" element={<Card />} />
       </Routes>
     </BrowserRouter>
   );
