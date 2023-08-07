@@ -1,24 +1,18 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const FileUpload = require('express-fileupload');
-// require route
-const GenreRoute = require("./routes/genre.js");
-const UserRoute = require("./routes/UserRoute.js");
-
-dotenv.config();
-
-const PORT = process.env.PORT;
+import express from "express";
+import FileUpload from "express-fileupload";
+import cors from "cors";
+import Kategori from "./routes/kategori.js";
 
 const app = express();
 
+app.use(FileUpload());
 app.use(cors());
 app.use(express.json());
-app.use(FileUpload());
 app.use(express.static("public"));
-app.use(GenreRoute);
-app.use(UserRoute);
 
-app.listen(PORT, () => {
-  console.log(`Server up and running on PORT ${PORT}`);
+app.use(Kategori);
+
+const port = 3100;
+app.listen(port, () => {
+  console.log(`Server berjalan pada port ${port}`);
 });
