@@ -9,6 +9,18 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
+[contributors-shield]: https://img.shields.io/github/contributors/narendi/Kel1-AllStars.svg?style=for-the-badge
+[contributors-url]: https://github.com/narendi/Kel1-AllStars/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/narendi/Kel1-AllStars.svg?style=for-the-badge
+[forks-url]: https://github.com/narendi/Kel1-AllStars/network/members
+[stars-shield]: https://img.shields.io/github/stars/narendi/Kel1-AllStars.svg?style=for-the-badge
+[stars-url]: https://github.com/narendi/Kel1-AllStars/stargazers
+[issues-shield]: https://img.shields.io/github/issues/narendi/Kel1-AllStars.svg?style=for-the-badge
+[issues-url]: https://github.com/narendi/Kel1-AllStars/issues
+[license-shield]: https://img.shields.io/github/license/narendi/Kel1-AllStars.svg?style=for-the-badge
+[license-url]: https://github.com/narendi/Kel1-AllStars/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-blue.svg?style=for-the-badge&logo=linkedin&logoColor=white
+[linkedin-url]: https://www.linkedin.com/in/sidiq-pramono-09766a268/
 
 <!-- PROJECT LOGO -->
 <br />
