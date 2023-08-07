@@ -10,7 +10,7 @@ import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
 import Allkategori from "./pages/allkategori";
-import Kategory from "./pages/Kategory";
+import Kategori from "./pages/kategori";
 
 function App() {
   return (
@@ -28,8 +28,7 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
-        <Route path="/kt" element={<Kategory />} />
-        
+        <Route path="/kg" element={<Kategori />} />
       </Routes>
     </BrowserRouter>
   );
