@@ -10,6 +10,9 @@ import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
 import Allkategori from "./pages/allkategori";
+import TransactionBox from "./components/kontenAll/transaksi";
+import Ulasan from "./components/kontenAll/ulasan";
+import DetailPelatihan from "./components/content/detailPelatihan";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
         <Route path="/All" element={<Allkategori />} />
         <Route path="/login" />
         //Route Components
+        <Route path="/tr" element={<TransactionBox />} />
+        <Route path="/coment" element={<Ulasan />} />
+        <Route path="/detail" element={<DetailPelatihan />} />
         <Route path="/profilmenu" element={<ProfileMenu />} />
         <Route path="/navigationBar" element={<NavigationBar />} />
         <Route path="/toogle-notif" element={<Toogle_notif />} />
