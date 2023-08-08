@@ -9,19 +9,24 @@ import Dropdown from "./components/layout/navbar/dropdown";
 import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
+import ContentAdminFinal from "./components/content/homeContentFinal";
+
 import Allkategori from "./pages/allkategori";
 import TransactionBox from "./components/kontenAll/transaksi";
 import Ulasan from "./components/kontenAll/ulasan";
 import DetailPelatihan from "./components/content/detailPelatihan";
+=======
+import Card from "./components/kontenAll/card";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<HomeLogin />} />
+        <Route path="/home" element={<HomeLogin />} />
         <Route path="/All" element={<Allkategori />} />
         <Route path="/login" />
+
         //Route Components
         <Route path="/tr" element={<TransactionBox />} />
         <Route path="/coment" element={<Ulasan />} />
@@ -33,6 +38,8 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
+        <Route path="/content-home" element={<ContentAdminFinal />} /> 
+        <Route path="/card" element={<Card />} />
       </Routes>
     </BrowserRouter>
   );
