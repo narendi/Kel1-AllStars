@@ -3,6 +3,7 @@ import NavigationBar from "../layout/navigationBar/navigationBar";
 import TransactionBox from "../kontenAll/transaksi";
 import { Modal, Rate } from "antd";
 import Ulasan from "../kontenAll/ulasan";
+import AppFooter from "../kontenAll/footer";
 
 const DetailPelatihan = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -300,7 +301,7 @@ const DetailPelatihan = () => {
       >
         <div className="flex">
           <div className="flex-col">
-            <div className="w-[332px] h-[190px] p-4 bg-white border  ml-20 shadow rounded">
+            <div className="w-[332px] h-[190px] border-black p-4 bg-white border ml-20 shadow rounded">
               <div className="text-center text-2xl mb-3">4.5</div>
               <span className="flex justify-center text-4xl">
                 <Rate disabled defaultValue={4} />
@@ -322,7 +323,7 @@ const DetailPelatihan = () => {
             ))}
           </div>
 
-          <div className="w-[332px]  h-[190px] p-4 bg-white border flex flex-col ml-40 mr-20 shadow rounded">
+          <div className="w-[332px]  h-[190px] p-4 bg-white border flex flex-col mr-20 shadow rounded">
             <span className="flex">
               <Rate disabled defaultValue={5} className="flex-grow" />
               <div className="mt-2">50%</div>
@@ -355,6 +356,7 @@ const DetailPelatihan = () => {
           </button>
         </div>
       </Modal>
+      <AppFooter />
     </div>
   );
 };
