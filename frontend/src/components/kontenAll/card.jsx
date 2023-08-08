@@ -28,7 +28,7 @@ const Card = ({ title, description, image }) => {
         ) => (
           <div
             key={item.id} // Add a unique key to each mapped element (e.g., use 'id' property)
-            className="bg-white shadow-lg rounded-lg overflow-hidden w-[239px] mr-5 h-[290px] mr-5 mt-5"
+            className="bg-white shadow-lg rounded-lg overflow-hidden w-[239px] mr-5 h-[290px] mt-5"
           >
             <img
               className="w-20 h-20 mt-5 ml-5 rounded-full object-cover"
