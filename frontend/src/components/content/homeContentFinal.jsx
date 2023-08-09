@@ -46,14 +46,13 @@ const ContentAdminFinal = () => {
   return (
     <React.Fragment>
       <Card className="w-full max-w-[150rem] flex-row">
-        <div className="flex-col">
           <CardHeader
             shadow={false}
             floated={false}
             className="m-0 w-2/5 shrink-0 rounded-r-none"
           >
             <img
-              src="https://media.licdn.com/dms/image/C511BAQHfU6AoxPa7zA/company-background_10000/0/1586503736552?e=1691226000&v=beta&t=jLA49Axm69_E7zlPnqHANvBONOC0B-cCHkxrAT--sz0"
+              src="./assets/konten/konten1.jpg"
               alt="card-image"
               className="h-full w-full object-cover rounded-2xl"
             />
@@ -117,7 +116,7 @@ const ContentAdminFinal = () => {
               <Kateg />
             </div>
           </div>
-        </div>
+          
       </Card>
     </React.Fragment>
   );
