@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Layout, Space, Dropdown, Checkbox, Row, Col } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import 'tailwindcss/tailwind.css';
+
 
 const { Sider } = Layout;
 
