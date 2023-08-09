@@ -11,7 +11,6 @@ import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
 import Allkategori from "./pages/allkategori";
 import Kategori from "./pages/kategori";
-import IsiPelatihan from "./components/isi pelatihan/isipelatihan";
 
 function App() {
   return (
@@ -30,7 +29,6 @@ function App() {
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
         <Route path="/kg" element={<Kategori />} />
-        <Route path="/iss" element={<IsiPelatihan />} />
       </Routes>
     </BrowserRouter>
   );
