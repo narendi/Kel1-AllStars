@@ -20,12 +20,11 @@ function App() {
         <Route path="/Home" element={<HomeLogin />} />
         <Route path="/All" element={<Allkategori />} />
         <Route path="/login" />
-        //Route Components
         <Route path="/profilmenu" element={<ProfileMenu />} />
         <Route path="/navigationBar" element={<NavigationBar />} />
         <Route path="/toogle-notif" element={<Toogle_notif />} />
         <Route path="/notifAcc" element={<NotifAcc />} />
-        <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
+        <Route path="/dropdown" element={<Dropdown />} /> 
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
         <Route path="/kt" element={<Kategory />} />
