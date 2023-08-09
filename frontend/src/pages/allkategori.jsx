@@ -1,9 +1,8 @@
 import React from "react";
-import Card from "../components/kontenAll/card.jsx";
+import Kateg from "../components/kontenAll/card.jsx";
 import Image1 from "/assets/hacker.jpg";
 import Image2 from "/assets/fotopemandangan.jpg";
 import Navbarguest from "../components/layout/navbar/navbarguest";
-
 const Allkategori = () => {
   // const cards = [
   //   {
@@ -26,7 +25,7 @@ const Allkategori = () => {
           </p>
           <div className="flex  justify-start mt-10">
             <div className="flex flex-wrap">
-              <Card />
+              <Kateg />
             </div>
           </div>
         </div>
