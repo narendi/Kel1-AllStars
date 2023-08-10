@@ -10,7 +10,7 @@ import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
 import ContentAdminFinal from "./components/content/homeContentFinal";
-
+import Kategory from "./pages/kategory";
 import Allkategori from "./pages/allkategori";
 import TransactionBox from "./components/kontenAll/transaksi";
 import Ulasan from "./components/kontenAll/ulasan";
@@ -37,6 +37,7 @@ function App() {
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
         <Route path="/content-home" element={<ContentAdminFinal />} />
+        <Route path="/kt" element={<Kategory />} />
         <Route path="/card" element={<Kateg />} />
       </Routes>
     </BrowserRouter>
