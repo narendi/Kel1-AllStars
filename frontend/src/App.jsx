@@ -16,6 +16,7 @@ import TransactionBox from "./components/kontenAll/transaksi";
 import Ulasan from "./components/kontenAll/ulasan";
 import DetailPelatihan from "./components/content/detailPelatihan";
 import Kateg from "./components/kontenAll/card";
+import Kategory from "./pages/kategory";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/kg" element={<Kategori />} />
         <Route path="/content-home" element={<ContentAdminFinal />} />
         <Route path="/card" element={<Kateg />} />
+        <Route path="/ktg" element={<Kategory />} />
       </Routes>
     </BrowserRouter>
   );
