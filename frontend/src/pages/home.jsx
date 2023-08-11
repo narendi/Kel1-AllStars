@@ -1,7 +1,7 @@
 import React from "react";
 import Navbarguest from "../components/layout/navbar/navbarguest";
 import ContentAdminFinal from "../components/content/homeContentFinal";
-import Card from "../components/kontenAll/card";
+import Card from "../components/kontenAll/kategori";
 import DetailPelatihan from "../components/content/detailPelatihan";
 // import Konten from "../components/kontenAll/konten";
 
