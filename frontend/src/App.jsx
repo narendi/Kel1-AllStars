@@ -14,7 +14,8 @@ import Allkategori from "./pages/allkategori";
 import TransactionBox from "./components/kontenAll/transaksi";
 import Ulasan from "./components/kontenAll/ulasan";
 import DetailPelatihan from "./components/content/detailPelatihan";
-import Kateg from "./components/kontenAll/card";
+import KategoryPelatihan from "./pages/kategoripelatihan";
+import Kateg from "./components/kontenAll/kategori";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<HomeLogin />} />
         <Route path="/All" element={<Allkategori />} />
+        <Route path="/pelatihan" element={<KategoryPelatihan />} />
         <Route path="/login" />
         //Route Components
         <Route path="/tr" element={<TransactionBox />} />
