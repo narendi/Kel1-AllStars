@@ -9,6 +9,7 @@ import Dropdown from "./components/layout/navbar/dropdown";
 import Konten from "./components/kontenAll/konten";
 import ContentSwiper from "./components/kontenAll/contentSwiper";
 import HomeLogin from "./pages/homeLogin";
+import Kategori from "./pages/kategori";
 import ContentAdminFinal from "./components/content/homeContentFinal";
 import Allkategori from "./pages/allkategori";
 import TransactionBox from "./components/kontenAll/transaksi";
@@ -16,6 +17,7 @@ import Ulasan from "./components/kontenAll/ulasan";
 import DetailPelatihan from "./components/content/detailPelatihan";
 import KategoryPelatihan from "./pages/kategoripelatihan";
 import Kateg from "./components/kontenAll/kategori";
+import Pengetahuan from "./pages/registrasiPNG";
 
 function App() {
   return (
@@ -37,8 +39,10 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} /> //dropdown kategori
         <Route path="/konten" element={<Konten />} />
         <Route path="/contentSwiper" element={<ContentSwiper />} />
+        <Route path="/kg" element={<Kategori />} />
         <Route path="/content-home" element={<ContentAdminFinal />} />
         <Route path="/card" element={<Kateg />} />
+        <Route path="/rrq" element={<Pengetahuan />} />
       </Routes>
     </BrowserRouter>
   );

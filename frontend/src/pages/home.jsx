@@ -16,10 +16,11 @@ const Home = () => {
           {/* <DetailPelatihan /> */}
         </div>
       </div>
-
       {/* <Konten /> */}
     </React.Fragment>
   );
 };
 
+
 export default Home;
+
