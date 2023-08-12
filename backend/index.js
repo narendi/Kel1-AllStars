@@ -6,6 +6,7 @@ import KategoriHeader from "./routes/kategoriheader.js";
 import Pelatihan from "./routes/pelatihan.js";
 import PelatihanHeader from "./routes/pelatihanheader.js";
 import Banner from "./routes/banner.js";
+import Ulasan from "./routes/ulasan.js";
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use(KategoriHeader);
 app.use(Pelatihan);
 app.use(PelatihanHeader);
 app.use(Banner);
+app.use(Ulasan);
 
 const port = 3100;
 app.listen(port, () => {
