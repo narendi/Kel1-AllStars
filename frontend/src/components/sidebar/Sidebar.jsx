@@ -10,7 +10,7 @@ const siderStyle = {
   lineHeight: '25px',
   color: '#fff',
   backgroundColor: 'rgb(30 41 59)',
-  height: '38rem',
+  height: '37rem',
 };
 
 const dropdownContentStyle = {
@@ -58,25 +58,24 @@ const Sbar = () => {
             <div className="text-white  items-center">
               <div className="mt-4 ml-3 text-2xl">Filter</div>
               <Dropdown
-                overlayStyle={dropdownContentStyle}
-                overlay={
-                  <div>
-                    {items.map((item) => (
-                      <Row key={item.key} style={{ margin: 0 }} onClick={() => handleCategoryClick(item.key)}>
-                        <Col span={1}>
-                          <Checkbox style={{ margin: 0 }} checked={item.key === selectedCategory} />
-                        </Col>
-                        <Col span={22}>{item.label}</Col>
-                      </Row>
-                    ))}
-                  </div>
-                }
-                trigger={['click']}
-              >
-                <a onClick={(e) => e.preventDefault()}>
-                  <Space className="text-white mt-1  ml-9">Kategori <DownOutlined /></Space>
-                </a>
-              </Dropdown>
+  overlay={
+    <div>
+      {items.map((item) => (
+        <Row key={item.key} style={{ margin: 0 }} onClick={() => handleCategoryClick(item.key)}>
+          <Col span={1}>
+            <Checkbox style={{ margin: 0 }} checked={item.key === selectedCategory} />
+          </Col>
+          <Col span={22}>{item.label}</Col>
+        </Row>
+      ))}
+    </div>
+  }
+  trigger={['click']}
+>
+  <a onClick={(e) => e.preventDefault()}>
+    <Space className="text-white mt-1  ml-9">Kategori <DownOutlined /></Space>
+  </a>
+</Dropdown>
             </div>
           </Sider>
         </Layout>

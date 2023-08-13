@@ -1,15 +1,15 @@
 import MyFooter from "../components/layout/footer/footer"
 import NavigationBar from "../components/layout/navigationBar/navigationBar"
-import Sbar from "../components/sidebar/Sidebar"
+import Rrp from "../components/registrasipengetahuan/regPeng"
 
-const Kategori = () => {
+const Pengetahuan = () => {
     return(
         <>
-        <NavigationBar />
-        <Sbar/>
+        <NavigationBar/>
+        <Rrp/>
         <MyFooter/>
         </>
     )
 }
 
-export default Kategori 
+export default Pengetahuan

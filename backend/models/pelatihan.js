@@ -3,12 +3,15 @@ import db from "../config/Database.js";
 
 const { DataTypes } = Sequelize;
 
-const Kategori = db.define(
-  "kategori",
+const Pelatihan = db.define(
+  "pelatihan",
   {
     name: DataTypes.STRING,
     description: DataTypes.STRING,
     image: DataTypes.STRING,
+    price: DataTypes.STRING,
+    comments: DataTypes.STRING,
+    views: DataTypes.STRING,
     url: DataTypes.STRING,
   },
   {
@@ -16,7 +19,7 @@ const Kategori = db.define(
   }
 );
 
-export default Kategori;
+export default Pelatihan;
 
 (async () => {
   await db.sync();

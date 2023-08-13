@@ -1,9 +1,8 @@
 import React from "react";
-import Kateg from "../components/kontenAll/card.jsx";
+import Kateg from "../components/kontenAll/kategori.jsx";
 import Image1 from "/assets/hacker.jpg";
 import Image2 from "/assets/fotopemandangan.jpg";
 import Navbarguest from "../components/layout/navbar/navbarguest";
-
 const Allkategori = () => {
   // const cards = [
   //   {
