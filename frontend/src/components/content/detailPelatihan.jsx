@@ -3,7 +3,7 @@ import NavigationBar from "../layout/navigationBar/navigationBar";
 import TransactionBox from "../kontenAll/transaksi";
 import { Modal, Rate } from "antd";
 import Ulasan from "../kontenAll/ulasan";
-import AppFooter from "../kontenAll/footer";
+import FooterColumn from "../layout/footer/footer";
 
 const DetailPelatihan = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -356,7 +356,7 @@ const DetailPelatihan = () => {
           </button>
         </div>
       </Modal>
-      <AppFooter />
+      <FooterColumn />
     </div>
   );
 };

@@ -3,10 +3,20 @@ import path from "path";
 
 export const getData = async (req, res) => {
   try {
-    const response = await Kategori.findAll();
-    res.json(response);
+    const { latest } = req.query;
+    if (latest && latest.toLowerCase() === "true") {
+      const response = await Kategori.findAll({
+        order: [["createdAt", "DESC"]],
+        limit: 5,
+      });
+      res.json(response);
+    } else {
+      const response = await Kategori.findAll();
+      res.json(response);
+    }
   } catch (error) {
     console.log(error.message);
+    res.status(500).json({ msg: "Server error" });
   }
 };
 
