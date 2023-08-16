@@ -12,7 +12,7 @@ const SidebarProfile = ({ activeMenu, setActiveMenu }) => {
 
   return (
     <div>
-      <div className="bg-gray-900 text-white h-screen w-56 py-8 flex flex-col ">
+      <div className="bg-gray-900 text-white h-full w-56 py-8 flex flex-col ">
         <div className="ml-5">
           <img
             src="https://placekitten.com/100/100"
