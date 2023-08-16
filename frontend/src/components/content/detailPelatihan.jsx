@@ -281,7 +281,7 @@ const DetailPelatihan = () => {
       </div>
       <br />
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-24">
         <button
           className="border border-black hover:border-blue-800 hover:text-blue-800 rounded-xl w-56 h-6"
           onClick={() => setModalOpen(true)}
@@ -323,7 +323,7 @@ const DetailPelatihan = () => {
             ))}
           </div>
 
-          <div className="w-[332px]  h-[190px] p-4 bg-white border flex flex-col mr-20 shadow rounded">
+          <div className="w-[332px]  h-[190px] p-4 bg-white border border-black flex flex-col mr-20 shadow rounded">
             <span className="flex">
               <Rate disabled defaultValue={5} className="flex-grow" />
               <div className="mt-2">50%</div>
@@ -347,7 +347,7 @@ const DetailPelatihan = () => {
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-24">
           <button
             className="border border-black hover:border-blue-800 hover:text-blue-800 rounded-xl w-56 h-6"
             onClick={() => setShownReviews(shownReviews + 2)}

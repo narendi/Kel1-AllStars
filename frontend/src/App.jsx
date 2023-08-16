@@ -33,6 +33,8 @@ function App() {
         //Route Components
         <Route path="/tr" element={<TransactionBox />} />
         <Route path="/coment" element={<Ulasan />} />
+        <Route path="/lg" element={<Login />} />
+        <Route path="/daftar" element={<Signup />} />
         <Route path="/sidebar" element={<SidebarProfile />} />
         <Route path="/detail" element={<DetailPelatihan />} />
 

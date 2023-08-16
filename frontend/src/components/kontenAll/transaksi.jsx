@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Modal, Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const TransactionBox = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const fixedPrice = "100.000";
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     const username = document.getElementById("username").value;
@@ -12,6 +14,7 @@ const TransactionBox = () => {
     if (username === "user123" && password === "pass123") {
       setIsLogin(true);
       setIsModalVisible(false);
+      navigate("/rrq");
     } else {
       alert("Username atau password salah!");
     }
