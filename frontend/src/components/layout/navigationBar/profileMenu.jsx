@@ -14,7 +14,7 @@ import {
   Cog6ToothIcon,
   // InboxArrowDownIcon,
   RocketLaunchIcon,
-  PowerIcon, 
+  PowerIcon,
   CogIcon,
   AcademicCapIcon,
 } from "@heroicons/react/24/outline";
@@ -27,7 +27,7 @@ const ProfileMenu = () => {
     {
       label: "Dashboard",
       icon: CogIcon,
-      path: "/dashboard",
+      path: "/DP",
     },
     {
       label: "Pelatihan Saya",

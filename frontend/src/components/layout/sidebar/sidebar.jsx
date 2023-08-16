@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SidebarProfile = ({ activeMenu, setActiveMenu }) => {
+const SidebarProfile = ({ activeMenu, setActiveMenu, userData }) => {
   const menuItems = [
     { title: "Dashboard", link: "/DP" },
     { title: "Pelatihan saya", link: "#" },
@@ -19,10 +19,8 @@ const SidebarProfile = ({ activeMenu, setActiveMenu }) => {
             alt="Profile"
             className="w-20 h-20 rounded-full mb-4"
           />
-          <h2 className="text-lg mt-2 font-semibold">John Doe</h2>
-          <p className="text-gray-500 mb-6 mt-2 text-xs">
-            john.doe@example.com
-          </p>
+          <h2 className="text-lg mt-2 font-semibold">{userData.username}</h2>
+          <p className="text-gray-500 mb-6 mt-2 text-sm">{userData.email}</p>
         </div>
         <nav className="flex flex-col ml-5">
           {menuItems.map((menuItem, index) => (
