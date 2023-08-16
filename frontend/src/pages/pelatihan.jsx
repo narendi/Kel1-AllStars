@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquare } from "@fortawesome/free-solid-svg-icons";
-import Navbarguest from "../components/layout/navbar/navbarguest";
+import NavigationBar from "../components/layout/navigationBar/navigationBar";
 import ProductCard from "../components/card/pelatihan";
 import { Checkbox, Select } from "antd";
 
-const KategoryPelatihan = () => {
+const Pelatihan = () => {
   const [kategori, setKategori] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -32,7 +32,7 @@ const KategoryPelatihan = () => {
 
   return (
     <div>
-      <Navbarguest />
+      <NavigationBar />
 
       <div className="flex">
         {/* Sidebar */}
@@ -88,4 +88,4 @@ const KategoryPelatihan = () => {
   );
 };
 
-export default KategoryPelatihan;
+export default Pelatihan;

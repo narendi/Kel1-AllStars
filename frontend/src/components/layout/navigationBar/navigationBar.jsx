@@ -84,34 +84,34 @@ const NavigationBar = () => {
               </div>
             </form>
           </div>
-        <ul className="flex flex-row font-medium rounded-lg ml-auto bg-white dark:bg-gray-900">
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:text-white"
-              aria-current="page"
-            >
-              Beranda
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white"
-            >
-              Pelatihan
-            </a>
-          </li>
-          <li>
-            <LanguageDropdown />
-          </li>
-          <li>
+          <ul className="flex flex-row font-medium rounded-lg ml-auto bg-white dark:bg-gray-900">
+            <li>
+              <a
+                href="/home"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:text-white"
+                aria-current="page"
+              >
+                Beranda
+              </a>
+            </li>
+            <li>
+              <a
+                href="/pelatihan"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white"
+              >
+                Pelatihan
+              </a>
+            </li>
+            <li>
+              <LanguageDropdown />
+            </li>
+            <li>
               <Toogle_notif />
-          </li>
-          <li className="block pl-5">
+            </li>
+            <li className="block pl-5">
               <ProfileMenu />
-          </li>
-        </ul>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
