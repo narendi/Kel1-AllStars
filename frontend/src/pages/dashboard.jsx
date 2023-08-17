@@ -8,11 +8,10 @@ function DashboardProfile() {
   const [userData, setUserData] = useState({ username: "", email: "" });
 
   useEffect(() => {
-    // Ganti '1' dengan ID pengguna yang sesuai
     axios
       .get(`http://localhost:3100/user/2`)
       .then((response) => {
-        console.log("User Data:", response.data); // Pastikan data pengguna muncul di konsol
+        console.log("User Data:", response.data);
         setUserData(response.data);
       })
       .catch((error) => {
