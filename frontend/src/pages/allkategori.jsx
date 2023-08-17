@@ -1,37 +1,16 @@
 import React from "react";
-import Card from "../components/kontenAll/card";
+import Kateg from "../components/kontenAll/kategori.jsx";
 import Image1 from "/assets/hacker.jpg";
 import Image2 from "/assets/fotopemandangan.jpg";
 import Navbarguest from "../components/layout/navbar/navbarguest";
-
 const Allkategori = () => {
-  const cards = [
-    {
-      image: Image1,
-      title: "Kategori A",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori B",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori C",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori D",
-      description: "Deskripsi Kategori",
-    },
-    {
-      image: Image2,
-      title: "Kategori E",
-      description: "Deskripsi Kategori",
-    },
-  ];
+  // const cards = [
+  //   {
+  //     image: Image1,
+  //     title: "Kategori A",
+  //     description: "Deskripsi Kategori",
+  //   },
+  // ];
 
   return (
     <>
@@ -45,9 +24,9 @@ const Allkategori = () => {
             enim quis ligula laoreet convallis.
           </p>
           <div className="flex  justify-start mt-10">
-            {cards.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
+            <div className="flex flex-wrap">
+              <Kateg />
+            </div>
           </div>
         </div>
       </div>
