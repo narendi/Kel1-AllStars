@@ -230,7 +230,7 @@ const ContentAdminFinal = () => {
                   Dibuat oleh:
                 </div>
                 <div className="text-sm font-semibold text-gray-800">
-                  Untuk:{" "}
+                  Untuk:
                 </div>
               </div>
               <div className="px-6 py-2 flex justify-between items-center">

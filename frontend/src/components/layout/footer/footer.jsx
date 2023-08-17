@@ -17,17 +17,21 @@ const FooterColumn = ({ title, children }) => {
 const MyFooter = () => {
   return (
     <Layout>
-      <Footer className="border-t border-black bg-white h-[50px]">
+      <Footer className="border-t border-black bg-white h-full">
         <div className="container mx-auto">
           <div className="grid grid-cols-5 gap-4 ">
             <FooterColumn title="Nusalearning">
-              <a href="#">2022 NusaLearning</a><br/>
-              <a href="#">All right reserved</a><br/>
+              <a href="#">2022 NusaLearning</a>
+              <br />
+              <a href="#">All right reserved</a>
+              <br />
               <a href="#">PT. Solusi Teknologi Nusantara</a>
             </FooterColumn>
             <FooterColumn title="About">
-              <a href="#">Privacy Policy</a><br/>
-              <a href="#">Help Center</a><br/>
+              <a href="#">Privacy Policy</a>
+              <br />
+              <a href="#">Help Center</a>
+              <br />
               <a href="#">Terms & Condition</a>
             </FooterColumn>
             <FooterColumn title="Services">

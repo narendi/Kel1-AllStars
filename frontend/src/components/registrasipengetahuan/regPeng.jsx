@@ -3,19 +3,31 @@ import { Button } from "@material-tailwind/react";
 // Import other necessary components or styling frameworks if needed
 
 const Rrp = () => {
+  const fixedPrice = "100.000";
+
+  const handleBuy = () => {
+    alert(`Anda telah membeli dengan harga Rp. ${fixedPrice}.`);
+  };
   return (
     <>
-    <p className="font-bold text-2xl ml-14 mt-6">Register</p>
-    <div className="grid grid-cols-2 gap-1">   
-          <img className="ml-14 mt-8" style={{width: "550px"}} src="../../public/assets/konten/konten1.jpg" alt="gambar" />
-          
-          <div className="mt-2 ml-4 text-sm ">
-            <div className="grid grid-cols-6">
-              <p className="font-bold"> Ditail Pembeli</p>
-              <p/> <p/> <p/> <p/>
-              <button className=" text-sm hover:text-white hover:bg-black hover:border-transparent py-1 px-1 rounded">Edit</button>
-            </div>
-          
+      <p className="font-bold text-2xl ml-14 mt-6">Register</p>
+      <div className="grid grid-cols-2 gap-1">
+        <img
+          className="ml-14 mt-8"
+          style={{ width: "550px" }}
+          src="assets/konten/konten1.jpg"
+          alt="gambar"
+        />
+
+        <div className="mt-2 ml-4 text-sm ">
+          <div className="grid grid-cols-6">
+            <p className="font-bold"> Detail Pembeli</p>
+            <p /> <p /> <p /> <p />
+            <button className=" text-sm hover:text-white hover:bg-black hover:border-transparent py-1 px-1 rounded">
+              Edit
+            </button>
+          </div>
+
           <div className="border border-black p-4 grid grid-cols-2 gap-1">
             <p className="text-black font-bold">Nama Lengkap</p>
             <p className="text-black ">Mary Jane</p>
@@ -26,7 +38,6 @@ const Rrp = () => {
             <p className="text-black font-bold mt-2">Nomor HandPhone</p>
             <p className="text-black mt-2">085634579123</p>
           </div>
-
 
           <p className="font-bold mt-3">Detail Pesanan</p>
           <div className="border border-black p-4 grid grid-cols-2 gap-1">
@@ -44,21 +55,23 @@ const Rrp = () => {
           </div>
           <br />
           <div className="grid grid-cols-3">
+            <div></div>
+            <div></div>
             <div>
-              </div>
-            <div>
-              </div>
-            <div>
-            <button className="w-full border border-black text-sm hover:text-white hover:bg-black hover:border-transparent py-1 px-4">Bayar</button>
+              <button
+                onClick={handleBuy}
+                className="w-full border border-black text-sm hover:text-white hover:bg-black hover:border-transparent py-1 px-4"
+              >
+                Bayar
+              </button>
             </div>
           </div>
-          </div>
-
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 };
