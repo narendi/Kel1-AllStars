@@ -29,6 +29,7 @@ import Ewallet from "./components/HalamanPembayaran/E-wallet";
 import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -65,6 +66,8 @@ function App() {
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
+       
+
       </Routes>
     </BrowserRouter>
   );
