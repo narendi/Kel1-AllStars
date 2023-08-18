@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Kateg from "../kontenAll/card.jsx";
+import axios from "axios";
+import MyFooter from "../layout/footer/footer.jsx";
 import {
   Card,
   CardHeader,
