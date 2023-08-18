@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SidebarProfile from "../components/layout/sidebar/sidebar";
 import NavigationBar from "../components/layout/navigationBar/navigationBar";
+import Dpi from "../components/content/dashboard";
+import MyFooter from "../components/layout/footer/footer";
 import axios from "axios";
 
 function DashboardProfile() {
@@ -30,9 +32,11 @@ function DashboardProfile() {
           userData={userData}
         />
         <main className="flex-1 p-8">
-          <h1>Hai Gaes, ini halaman Dashboard</h1>
+          <Dpi/>
         </main>
+        
       </div>
+      <MyFooter/>
     </>
   );
 }

@@ -26,7 +26,6 @@ const Signup = () => {
       });
 
       if (response.status === 201) {
-        // Successful registration, navigate to login page
         navigate("/lg");
       }
     } catch (error) {
