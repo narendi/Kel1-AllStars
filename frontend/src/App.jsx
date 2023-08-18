@@ -30,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<HomeLogin />} />
         <Route path="/All" element={<Allkategori />} />
+        <Route path="/allkategl" element={<Allkategori />} />
         <Route path="/SR" element={<SertifikatProfile />} />
         <Route path="/DP" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
