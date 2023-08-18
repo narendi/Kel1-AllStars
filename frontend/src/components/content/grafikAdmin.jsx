@@ -1,5 +1,5 @@
 import React from 'react';
-import { Line } from '@ant-design/charts';
+// import { Line } from '@ant-design/charts';
 
 const Tc = () => {
   const data = [
@@ -60,7 +60,7 @@ const Tc = () => {
     color: ['#f87171', '#67e8f9', '#fde047'],
   };
 
-  return <Line {...config} />;
+  // return <Line {...config} />;
 };
 
 export default Tc;

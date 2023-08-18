@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from 'react-apexcharts';
+// import Chart from 'react-apexcharts';
 
 const DonutChart = () => {
   const donutChartData = {
@@ -30,7 +30,7 @@ const DonutChart = () => {
 
   return (
     <div className="w-100">
-      <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" />
+      {/* <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" /> */}
     </div>
   );
 };
