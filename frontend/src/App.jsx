@@ -31,7 +31,7 @@ function App() {
         <Route path="/All" element={<Allkategori />} />
         <Route path="/allkategl" element={<Allkategori />} />
         <Route path="/SR" element={<SertifikatProfile />} />
-        <Route path="/DP" element={<DashboardProfile />} />
+        <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
         <Route path="/login" />
         //Route Components
