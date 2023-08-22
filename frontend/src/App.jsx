@@ -21,6 +21,14 @@ import DashboardProfile from "./pages/dashboard";
 import SertifikatProfile from "./pages/sertifikat";
 import Login from "./components/login/login";
 import Signup from "./components/login/daftar";
+import Lojin from "./components/lojin/lojin";
+import Registrasi from "./components/lojin/Registrasi";
+import Pembayaran from "./components/HalamanPembayaran/Pembayaran";
+import BankTransfer from "./components/HalamanPembayaran/BankTransfer";
+import Ewallet from "./components/HalamanPembayaran/E-wallet";
+import Creditcard from "./components/HalamanPembayaran/Creditcard";
+import Edit from "./components/registrasipengetahuan/Edit";
+
 
 function App() {
   return (
@@ -51,6 +59,15 @@ function App() {
         <Route path="/content-home" element={<ContentAdminFinal />} />
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
+        <Route path="/lojin" element={<Lojin />} />
+        <Route path="/registrasi" element={<Registrasi />} />
+        <Route path="/pembayaran" element={<Pembayaran />} />
+        <Route path="/banktransfer" element={<BankTransfer />} />
+        <Route path="/Ewallet" element={<Ewallet />} />
+        <Route path="/Creditcard" element={<Creditcard />} />
+        <Route path="/edit" element={<Edit />} />
+       
+
       </Routes>
     </BrowserRouter>
   );
