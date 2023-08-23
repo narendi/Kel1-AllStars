@@ -1,45 +1,43 @@
-// import React from 'react';
-// import Chart from 'react-apexcharts';
+import React, { useEffect, useRef } from "react";
+import { Chart, initTE } from "tw-elements";
 
-// const DonutChart = () => {
-//   const donutChartData = {
-//     options: {
-//       chart: {
-//         type: 'donut',
-//       },
-//       labels: ['Beginner', 'Intermediate', 'Sepuh'],
-//       colors: ['#22c55e', '#3b82f6', '#b91c1c'],
-//       dataLabels: {
-//         enabled: false,
-//       },
-//       plotOptions: {
-//         pie: {
-//           size: 250,
-//           customScale: 1, // Mengatur skala kustom untuk persegi panjang
-//         },
-//       },
-//       legend: {
-//         position: 'top',
-//         markers: {
-//           shape: 'square', // Mengubah bentuk marker menjadi persegi panjang
-//         },
-//       },
-//     },
-//     series: [315, 225, 720],
-//   };
+const Dnt = () => {
+  const chartRef = useRef(null);
 
-//   return (
-//     <div className="w-100">
-//       <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" />
-//     </div>
-//   );
-// };
-//   return (
-//     <div className="w-100">
-//       {/* <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" /> */}
-//     </div>
-//   );
-// };
+  useEffect(() => {
+    initTE({ Chart });
 
+    // Chart data
+    const dataDoughnut = {
+      type: 'doughnut',
+      data: {
+        labels: ['Beginner', 'Intermediate', 'Sesepuh'],
+        datasets: [
+          {
+            label: 'Traffic',
+            data: [2112, 2343, 2545,],
+            backgroundColor: [
+              '#22c55e',
+              '#facc15',
+              '#dc2626',
+             
+            ],
+          },
+        ],
+      },
+    };
 
-// export default DonutChart;
+    // Initialize chart
+    if (chartRef.current) {
+      new Chart(chartRef.current, dataDoughnut);
+    }
+  }, []);
+
+  return (
+    <div className=" w-96 ml-12 ">
+      <canvas ref={chartRef}></canvas>
+    </div>
+  );
+};
+
+export default Dnt;
