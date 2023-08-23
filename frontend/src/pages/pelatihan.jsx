@@ -35,7 +35,6 @@ const Pelatihan = () => {
       <NavigationBar />
 
       <div className="flex">
-        {/* Sidebar */}
         <div
           className="w-1/4 bg-gray-300 text-black p-4 h-screen"
           style={{ height: "145vh" }}
@@ -46,7 +45,6 @@ const Pelatihan = () => {
               className="w-full py-2 px-4 rounded-md bg-gray-200 hover:bg-gray-400 focus:outline-none focus:ring focus:ring-gray-400"
               onClick={toggleDropdown}
             >
-              {/* <FontAwesomeIcon icon={faSquare} className="mr-2" /> */}
               Kategori
               <svg
                 className={`-mr-1 ml-2 h-5 w-5 inline-block transform ${
@@ -77,7 +75,6 @@ const Pelatihan = () => {
           </div>
         </div>
 
-        {/* Daftar Produk */}
         <div className="justify-start">
           <div className="flex flex-wrap">
             <ProductCard />

@@ -20,18 +20,18 @@ export const getData = async (req, res) => {
   }
 };
 
-// export const getDataById = async (req, res) => {
-//   try {
-//     const response = await Kategori.findOne({
-//       where: {
-//         id: req.params.id,
-//       },
-//     });
-//     res.json(response);
-//   } catch (error) {
-//     console.log(error.message);
-//   }
-// };
+export const getDataById = async (req, res) => {
+  try {
+    const response = await Kategori.findOne({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json(response);
+  } catch (error) {
+    console.log(error.message);
+  }
+};
 
 export const createData = (req, res) => {
   if (req.files === null)
