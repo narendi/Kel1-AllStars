@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 
+
+// const Kateg = ({ title, description, image }) => {
+
 const Kateg = () => {
+
   const [kategori, setKategori] = useState([]);
 
   useEffect(() => {
