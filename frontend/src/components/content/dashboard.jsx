@@ -1,6 +1,6 @@
 import React from "react";
 import Tc from "./grafikAdmin";
-import DonutChart from "./grafikdonat";
+// import DonutChart from "./grafikdonat";
 
 const Dpi = () => {
     return(
@@ -30,7 +30,7 @@ const Dpi = () => {
             
             <br />
             <div>
-                <DonutChart/>
+                {/* <DonutChart/> */}
             </div>
             </div>
          
