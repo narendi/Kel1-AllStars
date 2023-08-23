@@ -3,7 +3,7 @@ import React from "react";
 const PelatihanS = () => {
     return (
         <div className="container mx-auto mt-6">
-            <div className="bg-white w-[70rem] rounded-lg border border-gray-300 p-6 max-w-full flex">
+            <div className="bg-white w-[85rem] rounded-lg border border-gray-300 p-6 max-w-full flex">
                 {/* Card di Bagian Kiri Border */}
                 <div className="w-1/4 bg-gray-100 border-r-2 border-gray-300 p-4">
                     {/* Isi konten untuk card */}

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SidebarProfile = ({ activeMenu, setActiveMenu, userData }) => {
   const menuItems = [
     { title: "Dashboard", link: "/DP" },
-    { title: "Pelatihan saya", link: "#" },
+    { title: "Pelatihan saya", link: "/DPS" },
     { title: "Sertifikat", link: "/SR" },
     { title: "Payment history", link: "#" },
     { title: "Akun", link: "#" },

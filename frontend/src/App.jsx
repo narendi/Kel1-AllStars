@@ -21,12 +21,12 @@ import DashboardProfile from "./pages/dashboard";
 import SertifikatProfile from "./pages/sertifikat";
 import Login from "./components/login/login";
 import Signup from "./components/login/daftar";
-import DPelatihan from "./pages/DashPelatihan";
 import Lojin from "./components/lojin/lojin";
 import Registrasi from "./components/lojin/Registrasi";
 import Pembayaran from "./components/HalamanPembayaran/Pembayaran";
 import BankTransfer from "./components/HalamanPembayaran/BankTransfer";
 import Ewallet from "./components/HalamanPembayaran/E-wallet";
+import DPelatihan from "./pages/DashPelatihan";
 import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
 
@@ -42,6 +42,7 @@ function App() {
         <Route path="/allkategl" element={<Allkategori />} />
         <Route path="/SR" element={<SertifikatProfile />} />
         <Route path="/DP" element={<DashboardProfile />} />
+        <Route path="/DPS" element={<DPelatihan />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
         <Route path="/login" />
         //Route Components
@@ -61,7 +62,6 @@ function App() {
         <Route path="/content-home" element={<ContentAdminFinal />} />
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
-        <Route path="/DPel" element={<DPelatihan />} />
         
         <Route path="/lojin" element={<Lojin />} />
         <Route path="/registrasi" element={<Registrasi />} />
