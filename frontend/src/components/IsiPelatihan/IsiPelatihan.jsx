@@ -12,7 +12,7 @@ const IPelatihan = () => {
                 <p className="font-bold text-2xl ml-6 mt-6">Pelatihan Saya</p>
                 <div className="space-y-6 mx-4">
                     <button
-                        className={`bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded mx-2 ${
+                        className={`bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-16 rounded mx-2 ${
                             activeContent === "semua" ? "bg-gray-600" : ""
                         }`}
                         onClick={() => setActiveContent("semua")}
@@ -28,7 +28,7 @@ const IPelatihan = () => {
                         Pelatihan Sedang Berjalan
                     </button>
                     <button
-                        className={`bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded mx-2 ${
+                        className={`bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-16 rounded mx-2 ${
                             activeContent === "selesai" ? "bg-gray-600" : ""
                         }`}
                         onClick={() => setActiveContent("selesai")}
