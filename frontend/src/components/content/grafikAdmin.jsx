@@ -1,5 +1,5 @@
-import React from 'react';
-import { Line } from '@ant-design/charts';
+import React from "react";
+// import { Line } from '@ant-design/charts';
 
 const Tc = () => {
   const data = [
@@ -28,39 +28,39 @@ const Tc = () => {
 
   const config = {
     data,
-    xField: 'day',
-    yField: 'value',
-    seriesField: 'line',
+    xField: "day",
+    yField: "value",
+    seriesField: "line",
     label: {
-      position: 'middle', // Posisikan label di tengah
+      position: "middle", // Posisikan label di tengah
       style: {
         fontSize: 14, // Ukuran font label
-        textAlign: 'center', // Posisi teks di tengah
+        textAlign: "center", // Posisi teks di tengah
       },
     },
     point: {
       size: 1, // Ukuran kotak warna lebih besar
-      shape: '',
+      shape: "",
       style: {
-        fill: 'none',
-        stroke: '#5B8FF9',
+        fill: "none",
+        stroke: "#5B8FF9",
         lineWidth: 1,
       },
     },
     xAxis: {
       title: {
-        text: '',
+        text: "",
       },
     },
     yAxis: {
       title: {
-        text: '',
+        text: "",
       },
     },
-    color: ['#f87171', '#67e8f9', '#fde047'],
+    color: ["#f87171", "#67e8f9", "#fde047"],
   };
 
-  return <Line {...config} />;
+  // return <Line {...config} />;
 };
 
 export default Tc;

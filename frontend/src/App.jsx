@@ -14,7 +14,7 @@ import TransactionBox from "./components/kontenAll/transaksi";
 import Ulasan from "./components/kontenAll/ulasan";
 import DetailPelatihan from "./components/content/detailPelatihan";
 import Pelatihan from "./pages/pelatihan";
-import Kateg from "./components/kontenAll/kategori";
+import Kateg from "./components/card/kategori";
 import Pengetahuan from "./pages/registrasiPNG";
 import SidebarProfile from "./components/layout/sidebar/sidebar";
 import DashboardProfile from "./pages/dashboard";
@@ -22,6 +22,14 @@ import SertifikatProfile from "./pages/sertifikat";
 import Login from "./components/login/login";
 import Signup from "./components/login/daftar";
 import DPelatihan from "./pages/DashPelatihan";
+import Lojin from "./components/lojin/lojin";
+import Registrasi from "./components/lojin/Registrasi";
+import Pembayaran from "./components/HalamanPembayaran/Pembayaran";
+import BankTransfer from "./components/HalamanPembayaran/BankTransfer";
+import Ewallet from "./components/HalamanPembayaran/E-wallet";
+import Creditcard from "./components/HalamanPembayaran/Creditcard";
+import Edit from "./components/registrasipengetahuan/Edit";
+
 
 function App() {
   return (
@@ -32,7 +40,7 @@ function App() {
         <Route path="/All" element={<Allkategori />} />
         <Route path="/allkategl" element={<Allkategori />} />
         <Route path="/SR" element={<SertifikatProfile />} />
-        <Route path="/DP" element={<DashboardProfile />} />
+        <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
         <Route path="/login" />
         //Route Components
@@ -41,7 +49,7 @@ function App() {
         <Route path="/lg" element={<Login />} />
         <Route path="/daftar" element={<Signup />} />
         <Route path="/sidebar" element={<SidebarProfile />} />
-        <Route path="/detail" element={<DetailPelatihan />} />
+        <Route path="/detail/:id" element={<DetailPelatihan />} />
         <Route path="/profilmenu" element={<ProfileMenu />} />
         <Route path="/navigationBar" element={<NavigationBar />} />
         <Route path="/toogle-notif" element={<Toogle_notif />} />
@@ -53,7 +61,14 @@ function App() {
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
         <Route path="/DPel" element={<DPelatihan />} />
-        
+        <Route path="/lojin" element={<Lojin />} />
+        <Route path="/registrasi" element={<Registrasi />} />
+        <Route path="/pembayaran" element={<Pembayaran />} />
+        <Route path="/banktransfer" element={<BankTransfer />} />
+        <Route path="/Ewallet" element={<Ewallet />} />
+        <Route path="/Creditcard" element={<Creditcard />} />
+        <Route path="/edit" element={<Edit />} />
+      
       </Routes>
     </BrowserRouter>
   );

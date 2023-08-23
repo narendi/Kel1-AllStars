@@ -34,5 +34,12 @@
 //     </div>
 //   );
 // };
+//   return (
+//     <div className="w-100">
+//       {/* <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" /> */}
+//     </div>
+//   );
+// };
+
 
 // export default DonutChart;
