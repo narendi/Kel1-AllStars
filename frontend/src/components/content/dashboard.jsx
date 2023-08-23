@@ -1,9 +1,6 @@
 import React from "react";
 import Tc from "./grafikAdmin";
 
-// import DonutChart from "./grafikdonat";
-
-
 const Dpi = () => {
   return (
     <>
@@ -14,8 +11,8 @@ const Dpi = () => {
             className="border border-black text-center text-2xl my-3 mx-7 flex flex-col justify-center items-center"
             style={{ height: "120px" }}
           >
-            {" "}
-            9 <div className="text-sm">Total Semua Pelatihan</div>{" "}
+            {"9 "}
+             <div className="text-sm">Total Semua Pelatihan</div>{" "}
           </div>
           <div
             className="border border-black text-center text-2xl my-3 mx-7 flex flex-col justify-center items-center"
@@ -92,8 +89,8 @@ const Dpi = () => {
           </button>
 
           <br />
-          <div>{/* <DonutChart/> */}</div>
         </div>
+      </div>
       </div>
     </>
   );
