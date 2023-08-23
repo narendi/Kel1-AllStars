@@ -3,7 +3,6 @@ import Tc from "./grafikAdmin";
 
 // import DonutChart from "./grafikdonat";
 
-
 const Dpi = () => {
   return (
     <>
@@ -35,64 +34,79 @@ const Dpi = () => {
 
         <br />
         <div className="grid grid-cols-2">
-            <div className=" border border-black mr-2 relative" style={{height: "470px"}}> 
-            <div className=" mt-2 ml-2 font-bold"> Grafik Jumlah Pelatihan Selesai Saya</div> 
-            <button  className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900" style={{height: "25px" , width: "120px"}}>Unduh gambar</button>
-            <br />
-            <div>
-                <Tc/>
-            </div>
-            </div>
-            
-            <div className=" border border-black ml-2 relative" style={{height: "470px"}}> 
-            <div className=" mt-2 ml-2 font-bold"> Total Pelatihan</div> 
-            <button  className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900" style={{height: "25px" , width: "120px"}}>Unduh gambar</button>
-            
-            <br />
-            <div>
-            </div>
-            </div>
-         
-
-
-      </div>
-      <br />
-      <div className="grid grid-cols-2">
-        <div
-          className=" border border-black mr-2 relative"
-          style={{ height: "470px" }}
-        >
-          <div className=" mt-2 ml-2 font-bold">
-            {" "}
-            Grafik Jumlah Pelatihan Selesai Saya
-          </div>
-          <button
-            className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900"
-            style={{ height: "25px", width: "120px" }}
+          <div
+            className=" border border-black mr-2 relative"
+            style={{ height: "470px" }}
           >
-            Unduh gambar
-          </button>
-          <br />
-          <div>
-            <Tc />
+            <div className=" mt-2 ml-2 font-bold">
+              {" "}
+              Grafik Jumlah Pelatihan Selesai Saya
+            </div>
+            <button
+              className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900"
+              style={{ height: "25px", width: "120px" }}
+            >
+              Unduh gambar
+            </button>
+            <br />
+            <div>
+              <Tc />
+            </div>
           </div>
 
+          <div
+            className=" border border-black ml-2 relative"
+            style={{ height: "470px" }}
+          >
+            <div className=" mt-2 ml-2 font-bold"> Total Pelatihan</div>
+            <button
+              className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900"
+              style={{ height: "25px", width: "120px" }}
+            >
+              Unduh gambar
+            </button>
+
+            <br />
+            <div></div>
+          </div>
         </div>
-
-        <div
-          className=" border border-black ml-2 relative"
-          style={{ height: "470px" }}
-        >
-          <div className=" mt-2 ml-2 font-bold"> Total Pelatihan</div>
-          <button
-            className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900"
-            style={{ height: "25px", width: "120px" }}
+        <br />
+        <div className="grid grid-cols-2">
+          <div
+            className=" border border-black mr-2 relative"
+            style={{ height: "470px" }}
           >
-            Unduh gambar
-          </button>
+            <div className=" mt-2 ml-2 font-bold">
+              {" "}
+              Grafik Jumlah Pelatihan Selesai Saya
+            </div>
+            <button
+              className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900"
+              style={{ height: "25px", width: "120px" }}
+            >
+              Unduh gambar
+            </button>
+            <br />
+            <div>
+              <Tc />
+            </div>
+          </div>
 
-          <br />
-          <div>{/* <DonutChart/> */}</div>
+          <div
+            className=" border border-black ml-2 relative"
+            style={{ height: "470px" }}
+          >
+            <div className=" mt-2 ml-2 font-bold"> Total Pelatihan</div>
+            <button
+              className="border border-black mt-2 mx-3 text-sm absolute top-0 right-0 hover hover:bg-gray-400 hover:text-gray-900"
+              style={{ height: "25px", width: "120px" }}
+            >
+              Unduh gambar
+            </button>
+
+            <br />
+            <div>{/* <DonutChart/> */}</div>
+          </div>
         </div>
       </div>
     </>
