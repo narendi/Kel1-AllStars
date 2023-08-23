@@ -1,7 +1,6 @@
 // import React from 'react';
 
 // import Chart from 'react-apexcharts';
-import React from 'react';
 
 import React from "react";
 
@@ -41,12 +40,16 @@ import React from "react";
 //   );
 // };
 
-  // return (
-  //   <div className="w-100">
-      {/* <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" /> */}
-    {/* </div>
+// return (
+//   <div className="w-100">
+{
+  /* <Chart options={donutChartData.options} series={donutChartData.series} type="donut" width="100%" /> */
+}
+{
+  /* </div>
   );
-}; */}
+}; */
+}
 
 //   return (
 //     <div className="w-100">
