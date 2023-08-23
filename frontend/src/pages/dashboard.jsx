@@ -32,11 +32,10 @@ function DashboardProfile() {
           userData={userData}
         />
         <main className="flex-1 p-8">
-          <Dpi/>
+          <Dpi />
         </main>
-        
       </div>
-      <MyFooter/>
+      <MyFooter />
     </>
   );
 }
