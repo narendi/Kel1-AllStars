@@ -30,8 +30,6 @@ import DPelatihan from "./pages/DashPelatihan";
 import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
 
-
-
 function App() {
   return (
     <BrowserRouter>
@@ -41,12 +39,9 @@ function App() {
         <Route path="/All" element={<Allkategori />} />
         <Route path="/allkategl" element={<Allkategori />} />
         <Route path="/SR" element={<SertifikatProfile />} />
-
         <Route path="/DP" element={<DashboardProfile />} />
         <Route path="/DPS" element={<DPelatihan />} />
-
         <Route path="/dashboard" element={<DashboardProfile />} />
-
         <Route path="/pelatihan" element={<Pelatihan />} />
         <Route path="/login" />
         //Route Components
@@ -66,7 +61,7 @@ function App() {
         <Route path="/content-home" element={<ContentAdminFinal />} />
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
-        
+        <Route path="/DPel" element={<DPelatihan />} />
         <Route path="/lojin" element={<Lojin />} />
         <Route path="/registrasi" element={<Registrasi />} />
         <Route path="/pembayaran" element={<Pembayaran />} />
@@ -74,8 +69,6 @@ function App() {
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
-       
-
       </Routes>
     </BrowserRouter>
   );

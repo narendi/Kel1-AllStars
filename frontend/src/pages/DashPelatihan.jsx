@@ -6,14 +6,14 @@ import axios from "axios";
 import IPelatihan from "../components/IsiPelatihan/IsiPelatihan";
 
 const DPelatihan = () => {
-    const [activeMenu, setActiveMenu] = useState("DPS");
+  const [activeMenu, setActiveMenu] = useState("DPS");
   const [userData, setUserData] = useState({ username: "", email: "" });
 
   useEffect(() => {
     axios
       .get(`http://localhost:3100/user/2`)
       .then((response) => {
-        console.log("User Data:", response.data); 
+        console.log("User Data:", response.data);
         setUserData(response.data);
       })
       .catch((error) => {
@@ -21,26 +21,22 @@ const DPelatihan = () => {
       });
   }, []);
 
-
-    return(
-<>
-    <NavigationBar /> 
-    <div className="flex-row flex">
-    <SidebarProfile
+  return (
+    <>
+      <NavigationBar />
+      <div className="flex-row flex">
+        <SidebarProfile
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
           userData={userData}
         />
         <main className="flex-1 p-8">
-          <IPelatihan/>
+          <IPelatihan />
         </main>
-    </div>
-    <MyFooter />
-    
-</>
-
-
-    );
+      </div>
+      <MyFooter />
+    </>
+  );
 };
 
 export default DPelatihan;
