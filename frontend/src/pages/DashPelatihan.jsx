@@ -9,10 +9,10 @@ const DPelatihan = () => {
     return(
 <>
     <NavigationBar /> 
-    {/* <div className="flex-row flex">
-    <SidebarProfile /> */}
+    <div className="flex-row flex">
+    {/* <SidebarProfile /> */}
         <IPelatihan/>
-    {/* </div> */}
+    </div>
     <MyFooter />
 </>
 
