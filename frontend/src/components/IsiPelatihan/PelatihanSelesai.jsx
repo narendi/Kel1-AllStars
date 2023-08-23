@@ -1,9 +1,8 @@
 import React from "react";
 
-const Bpelatihan = () => {
+const PelatihanS = () => {
     return (
-        <div className="container mx-auto mt-6 ">
-            
+        <div className="container mx-auto mt-6">
             <div className="bg-white w-[85rem] rounded-lg border border-gray-300 p-6 max-w-full flex">
                 {/* Card di Bagian Kiri Border */}
                 <div className="w-1/4 bg-gray-100 border-r-2 border-gray-300 p-4">
@@ -29,12 +28,12 @@ const Bpelatihan = () => {
                                 <div />
                                 <div className="text-right">
                                     <span className="text-xs font-semibold inline-block text-gray-600">
-                                        75%
+                                        100%
                                     </span>
                                 </div>
                             </div>
                             <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
-                                <div style={{ width: "75%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-black"></div>
+                                <div style={{ width: "100%" }} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-black"></div>
                             </div>
                         </div>
                     </div>
@@ -53,4 +52,4 @@ const Bpelatihan = () => {
     );
 };
 
-export default Bpelatihan;
+export default PelatihanS;

@@ -9,19 +9,14 @@ const Dnt = () => {
 
     // Chart data
     const dataDoughnut = {
-      type: 'doughnut',
+      type: "doughnut",
       data: {
-        labels: ['Beginner', 'Intermediate', 'Sesepuh'],
+        labels: ["Beginner", "Intermediate", "Sesepuh"],
         datasets: [
           {
-            label: 'Traffic',
-            data: [2112, 2343, 2545,],
-            backgroundColor: [
-              '#22c55e',
-              '#facc15',
-              '#dc2626',
-             
-            ],
+            label: "Traffic",
+            data: [2112, 2343, 2545],
+            backgroundColor: ["#22c55e", "#facc15", "#dc2626"],
           },
         ],
       },
