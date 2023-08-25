@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import SidebarProfile from "../components/layout/sidebar/sidebar";
 import NavigationBar from "../components/layout/navigationBar/navigationBar";
-import Dpi from "../components/content/dashboard";
 import MyFooter from "../components/layout/footer/footer";
 import axios from "axios";
+import IPelatihan from "../components/IsiPelatihan/IsiPelatihan";
 
-function DashboardProfile() {
-  const [activeMenu, setActiveMenu] = useState("Dashboard");
+const DPelatihan = () => {
+  const [activeMenu, setActiveMenu] = useState("DPS");
   const [userData, setUserData] = useState({ username: "", email: "" });
 
   useEffect(() => {
@@ -24,7 +24,6 @@ function DashboardProfile() {
   return (
     <>
       <NavigationBar />
-
       <div className="flex-row flex">
         <SidebarProfile
           activeMenu={activeMenu}
@@ -32,12 +31,12 @@ function DashboardProfile() {
           userData={userData}
         />
         <main className="flex-1 p-8">
-          <Dpi />
+          <IPelatihan />
         </main>
       </div>
       <MyFooter />
     </>
   );
-}
+};
 
-export default DashboardProfile;
+export default DPelatihan;
