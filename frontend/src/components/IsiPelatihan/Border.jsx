@@ -1,7 +1,10 @@
 import React from "react";
-import DetailP from "../DetailPelatihan/Detail";
+
 
 const Bpelatihan = () => {
+   
+
+    
     return (
         <div className="container mx-auto mt-6 ">
         <div className="bg-white w-[70rem] rounded-lg border border-gray-300 p-6 max-w-full flex">
@@ -46,8 +49,9 @@ const Bpelatihan = () => {
                 Lihat Materi
             </button>
             <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded ml-8">
-                Detail<DetailP/>
+                Detail
             </button>
+            
         </div>
         </div>
         </div>
