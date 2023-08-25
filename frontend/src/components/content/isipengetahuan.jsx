@@ -1,42 +1,176 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import NavigationBar from "../layout/navigationBar/navigationBar";
 import TransactionBox from "../kontenAll/transaksi";
-import { Modal, Rate } from "antd";
+import { Modal, Rate, Image } from "antd";
 import Ulasan from "../kontenAll/ulasan";
 import FooterColumn from "../layout/footer/footer";
 
-const DetailPelatihan = () => {
+const Isipengetahuan = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [reviews, setReviews] = useState([]);
   const [shownReviews, setShownReviews] = useState(2);
+  const reviews = [
+    {
+      name: "John Doe",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imageUrl: "/assets/hacker.jpg",
+      replies: [
+        {
+          name: "Jane Doe",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "John Doe",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+    },
+    {
+      name: "Mary Jane",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+  ];
 
-  useEffect(() => {
-    // Ganti URL dengan URL backend Anda
-    axios
-      .get("http://localhost:3100/comments")
-      .then((response) => {
-        setReviews(response.data);
-      })
-      .catch((error) => {
-        console.error("Gagal mengambil data komentar:", error);
-      });
-  }, []);
+  const coment = [
+    {
+      name: "John Doe",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imageUrl: "/assets/hacker.jpg",
+      replies: [
+        {
+          name: "Jane Doe",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "John Doe",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+    },
+    {
+      name: "Mary Jane",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+    {
+      name: "Peter Parker",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+
+    {
+      name: "Steve Roger",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="bg-gray-200">
       <NavigationBar />
-      <TransactionBox />
 
       <div className="mt-6 ml-10">
-        <h1 className="font-extrabold text-2xl">Detail Pelatihan</h1>
+        <h1 className="font-extrabold text-2xl">Judul Pelatihan</h1>
+        <Image
+          width={1300}
+          height={500}
+          src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+        />
       </div>
 
-      <div className="flex flex-col text-lg ml-12 mt-7">
-        <h2 className="font-bold">Judul Pelatihan</h2>
-        <p className="text-gray-600">Lorem ipsum dolor sit amet</p>
-      </div>
-
-      <div className="flex flex-col ml-12 mt-20">
+      <div className="ml-12 mt-20">
         <h2 className="font-bold">Tentang Pelatihan</h2>
         <p className="text-gray-600 mt-2 whitespace-no-wrap max-w-4xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -52,68 +186,6 @@ const DetailPelatihan = () => {
           ultrices posuere cubilia curae; Donec varius libero augue, eget varius
           tellus cursus non.
         </p>
-        <div className="font-extrabold text-lg mt-20">Konten Preview</div>
-        <div className="max-w-4xl h-[600px] p-4 bg-white border border-black shadow rounded flex">
-          <div className="w-[220px] h-full border border-black">
-            <div className="font-bold text-lg mt-2 ml-3">Modul 1</div>
-            <hr className=" border-black" />
-            <div className="flex flex-col mt-8 ml-2">
-              <div className="mb-4">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 1
-                </button>
-              </div>
-              <div className="mb-4">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 2
-                </button>
-              </div>
-              <div className="mb-4">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 3
-                </button>
-              </div>
-              <div className="mb-8">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 4
-                </button>
-              </div>
-            </div>
-            <hr className=" border-black" />
-
-            <div className="font-bold text-lg mt-2 ml-3">Modul 2</div>
-            <hr className=" border-black" />
-            <div className="flex flex-col mt-8 ml-2">
-              <div className="mb-4">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 1
-                </button>
-              </div>
-              <div className="mb-4">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 2
-                </button>
-              </div>
-              <div className="mb-4">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 3
-                </button>
-              </div>
-              <div className="mb-8">
-                <button className="rounded-md border border-black w-[180px] text-left">
-                  Sub Modul 4
-                </button>
-              </div>
-            </div>
-            <hr className=" border-black" />
-            <div className="font-bold text-lg mt-2 ml-3">Final Quis</div>
-          </div>
-
-          <div className="w-[80%] h-full ml-3 p-4 bg-white shadow rounded border border-black">
-            <div className="w-full h-1/2 mb-2 p-4 bg-white shadow rounded border border-black"></div>
-            <div className="w-full h-1/2  p-4 bg-white shadow rounded border border-black"></div>
-          </div>
-        </div>
       </div>
 
       <div className="flex flex-col text-lg ml-12 mt-20">
@@ -177,13 +249,13 @@ const DetailPelatihan = () => {
                 </div>
               </span>
             </div>
-            {reviews.map((review, index) => (
+            {coment.slice(0, shownReviews).map((watch, index) => (
               <Ulasan
                 key={index}
-                imageUrl={review.imageUrl}
-                name={review.user}
-                content={review.comment}
-                replies={review.replies}
+                name={watch.name}
+                imageUrl={watch.imageUrl}
+                content={watch.content}
+                replies={watch.replies}
               />
             ))}
           </div>
@@ -221,9 +293,8 @@ const DetailPelatihan = () => {
           </button>
         </div>
       </Modal>
-      <FooterColumn />
     </div>
   );
 };
 
-export default DetailPelatihan;
+export default Isipengetahuan;
