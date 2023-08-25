@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Payment from "../components/content/payment";
 import SidebarProfile from "../components/layout/sidebar/sidebar";
 import NavigationBar from "../components/layout/navigationBar/navigationBar";
-import Dpi from "../components/content/dashboard";
 import MyFooter from "../components/layout/footer/footer";
 import axios from "axios";
-
-function DashboardProfile() {
-  const [activeMenu, setActiveMenu] = useState("Dashboard");
+const PaymentHistory = () => {
+  const [activeMenu, setActiveMenu] = useState("Payment history");
   const [userData, setUserData] = useState({ username: "", email: "" });
 
   useEffect(() => {
@@ -22,9 +21,8 @@ function DashboardProfile() {
   }, []);
 
   return (
-    <>
+    <div>
       <NavigationBar />
-
       <div className="flex-row flex">
         <SidebarProfile
           activeMenu={activeMenu}
@@ -32,12 +30,12 @@ function DashboardProfile() {
           userData={userData}
         />
         <main className="flex-1 p-8">
-          <Dpi />
+          <Payment />
         </main>
       </div>
       <MyFooter />
-    </>
+    </div>
   );
-}
+};
 
-export default DashboardProfile;
+export default PaymentHistory;

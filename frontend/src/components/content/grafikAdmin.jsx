@@ -1,66 +1,55 @@
-import React from "react";
-// import { Line } from '@ant-design/charts';
+import React, { useEffect } from "react";
+import { Chart, initTE } from "tw-elements";
+
+initTE({ Chart });
 
 const Tc = () => {
-  const data = [
-    { day: "Senin", value: 2, line: "Kategori 1" },
-    { day: "Selasa", value: 4, line: "Kategori 1" },
-    { day: "Rabu", value: 5, line: "Kategori 1" },
-    { day: "Kamis", value: 3, line: "Kategori 1" },
-    { day: "Jumat", value: 2, line: "Kategori 1" },
-    { day: "Sabtu", value: 3, line: "Kategori 1" },
-    { day: "Minggu", value: 1, line: "Kategori 1" },
-    { day: "Senin", value: 3, line: "Kategori 2" },
-    { day: "Selasa", value: 1, line: "Kategori 2" },
-    { day: "Rabu", value: 4, line: "Kategori 2" },
-    { day: "Kamis", value: 2, line: "Kategori 2" },
-    { day: "Jumat", value: 3, line: "Kategori 2" },
-    { day: "Sabtu", value: 2, line: "Kategori 2" },
-    { day: "Minggu", value: 4, line: "Kategori 2" },
-    { day: "Senin", value: 1, line: "Kategori 3" },
-    { day: "Selasa", value: 3, line: "Kategori 3" },
-    { day: "Rabu", value: 2, line: "Kategori 3" },
-    { day: "Kamis", value: 2, line: "Kategori 3" },
-    { day: "Jumat", value: 2, line: "Kategori 3" },
-    { day: "Sabtu", value: 4, line: "Kategori 3" },
-    { day: "Minggu", value: 5, line: "Kategori 3" },
-  ];
+  useEffect(() => {
+    // Chart data
+    const dataLine = {
+      type: "line",
+      data: {
+        labels: [
+          "Senin",
+          "Selasa",
+          "Rabu",
+          "Kamis",
+          "Jumat",
+          "Sabtu",
+          "Minggu",
+        ],
+        datasets: [
+          {
+            label: "Kategori 1",
+            data: [2, 4, 6, 8, 6, 4, 2],
+            borderColor: "blue",
+            backgroundColor: "rgba(0, 0, 255, 0.1)",
+          },
+          {
+            label: "Kategori 2",
+            data: [5, 5, 0, 2, 7, 8, 4],
+            borderColor: "green",
+            backgroundColor: "rgba(0, 255, 0, 0.1)",
+          },
+          {
+            label: "Kategori 3",
+            data: [8, 5, 2, 6, 2, 5, 8],
+            borderColor: "red",
+            backgroundColor: "rgba(255, 0, 0, 0.1)",
+          },
+        ],
+      },
+    };
 
-  const config = {
-    data,
-    xField: "day",
-    yField: "value",
-    seriesField: "line",
-    label: {
-      position: "middle", // Posisikan label di tengah
-      style: {
-        fontSize: 14, // Ukuran font label
-        textAlign: "center", // Posisi teks di tengah
-      },
-    },
-    point: {
-      size: 1, // Ukuran kotak warna lebih besar
-      shape: "",
-      style: {
-        fill: "none",
-        stroke: "#5B8FF9",
-        lineWidth: 1,
-      },
-    },
-    xAxis: {
-      title: {
-        text: "",
-      },
-    },
-    yAxis: {
-      title: {
-        text: "",
-      },
-    },
-    color: ["#f87171", "#67e8f9", "#fde047"],
-  };
+    // Create and render the chart
+    new Chart(document.getElementById("line-chart"), dataLine);
+  }, []);
 
-  // return <Line {...config} />;
+  return (
+    <div className="max-w-md mx-auto mt-4 my-9">
+      <canvas id="line-chart" />
+    </div>
+  );
 };
 
 export default Tc;
