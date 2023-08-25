@@ -6,9 +6,11 @@ import KategoriHeader from "./routes/kategoriheader.js";
 import Pelatihan from "./routes/pelatihan.js";
 import PelatihanHeader from "./routes/pelatihanheader.js";
 import Banner from "./routes/banner.js";
-import Ulasan from "./routes/ulasan.js";
+import Comment from "./routes/comment.js";
 import authRoutes from "./routes/authRoutes.js";
 import judulpelatihan from "./routes/judulpelatihan.js";
+import Reply from "./routes/reply.js";
+
 const app = express();
 
 app.use(FileUpload());
@@ -21,8 +23,9 @@ app.use(KategoriHeader);
 app.use(Pelatihan);
 app.use(PelatihanHeader);
 app.use(Banner);
-app.use(Ulasan);
+app.use(Comment);
 app.use(authRoutes);
+app.use(Reply);
 app.use(judulpelatihan);
 
 const port = 3100;
