@@ -29,6 +29,8 @@ import Ewallet from "./components/HalamanPembayaran/E-wallet";
 import DPelatihan from "./pages/DashPelatihan";
 import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
+import Payment from "./components/content/payment";
+import PaymentHistory from "./pages/paymenhistory";
 
 function App() {
   return (
@@ -41,10 +43,12 @@ function App() {
         <Route path="/SR" element={<SertifikatProfile />} />
         <Route path="/DP" element={<DashboardProfile />} />
         <Route path="/DPS" element={<DPelatihan />} />
+        <Route path="/payment" element={<PaymentHistory />} />
         <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
         <Route path="/login" />
         //Route Components
+        <Route path="/pay" element={<Payment />} />
         <Route path="/tr" element={<TransactionBox />} />
         <Route path="/coment" element={<Ulasan />} />
         <Route path="/lg" element={<Login />} />
