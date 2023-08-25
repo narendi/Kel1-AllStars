@@ -29,7 +29,7 @@ import Ewallet from "./components/HalamanPembayaran/E-wallet";
 import DPelatihan from "./pages/DashPelatihan";
 import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
-
+import DetailP from "./components/DetailPelatihan/Detail";
 
 
 function App() {
@@ -69,6 +69,7 @@ function App() {
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
+        <Route path="/detaill" element={<DetailP />} />
       </Routes>
     </BrowserRouter>
   );

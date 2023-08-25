@@ -3,7 +3,7 @@ import React from "react";
 const PelatihanS = () => {
     return (
         <div className="container mx-auto mt-6">
-        <div className="bg-white w-[85rem] rounded-lg border border-gray-300 p-6 max-w-full flex">
+        <div className="bg-white w-[70rem] rounded-lg border border-gray-300 p-6 max-w-full flex">
        <div className="w-1/4 p-4">      
         <img
                         src="https://3.bp.blogspot.com/-6tHuueFntKE/VtpyQahFB4I/AAAAAAAAAFU/LUyVSVj1s60/s1600/gambar-wallpaper-yang-cantik.jpg"
