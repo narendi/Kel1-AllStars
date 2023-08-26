@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import NavigationBar from "../layout/navigationBar/navigationBar";
 import TransactionBox from "../kontenAll/transaksi";
 import { Modal, Rate } from "antd";
@@ -7,156 +8,20 @@ import FooterColumn from "../layout/footer/footer";
 
 const DetailPelatihan = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [reviews, setReviews] = useState([]);
   const [shownReviews, setShownReviews] = useState(2);
-  const reviews = [
-    {
-      name: "John Doe",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/assets/hacker.jpg",
-      replies: [
-        {
-          name: "Jane Doe",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          name: "John Doe",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-      ],
-    },
-    {
-      name: "Mary Jane",
-      imageUrl: "/assets/hacker.jpg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      replies: [
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-      ],
-    },
-  ];
 
-  const coment = [
-    {
-      name: "John Doe",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/assets/hacker.jpg",
-      replies: [
-        {
-          name: "Jane Doe",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-        {
-          name: "John Doe",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        },
-      ],
-    },
-    {
-      name: "Mary Jane",
-      imageUrl: "/assets/hacker.jpg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      replies: [
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-      ],
-    },
-    {
-      name: "Peter Parker",
-      imageUrl: "/assets/hacker.jpg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      replies: [
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-      ],
-    },
-
-    {
-      name: "Steve Roger",
-      imageUrl: "/assets/hacker.jpg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      replies: [
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-        {
-          name: "Jane Doe",
-          content: "Reply from Jane Doe",
-        },
-      ],
-    },
-  ];
-
+  useEffect(() => {
+    // Ganti URL dengan URL backend Anda
+    axios
+      .get("http://localhost:3100/comments")
+      .then((response) => {
+        setReviews(response.data);
+      })
+      .catch((error) => {
+        console.error("Gagal mengambil data komentar:", error);
+      });
+  }, []);
   return (
     <div className="bg-gray-200">
       <NavigationBar />
@@ -312,13 +177,13 @@ const DetailPelatihan = () => {
                 </div>
               </span>
             </div>
-            {coment.slice(0, shownReviews).map((watch, index) => (
+            {reviews.map((review, index) => (
               <Ulasan
                 key={index}
-                name={watch.name}
-                imageUrl={watch.imageUrl}
-                content={watch.content}
-                replies={watch.replies}
+                imageUrl={review.imageUrl}
+                name={review.user}
+                content={review.comment}
+                replies={review.replies}
               />
             ))}
           </div>
