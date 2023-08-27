@@ -35,6 +35,7 @@ import PaymentHistory from "./pages/paymenhistory";
 import Akun from "./components/content/akun";
 import AkunPage from "./pages/akun";
 import Password from "./components/content/password";
+import Detailjawaban from "./pages/detailjawaban";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
         <Route path="/content-isi-pengetahuan" element={<Isipengetahuan />} />
+        <Route path="/jdk" element={<Detailjawaban />} />
       </Routes>
     </BrowserRouter>
   );

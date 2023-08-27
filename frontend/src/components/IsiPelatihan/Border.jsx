@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Bpelatihan = () => {
+    const Navigate = useNavigate()
+
     return (
         <div className="container mx-auto mt-6 ">
             
@@ -15,7 +18,7 @@ const Bpelatihan = () => {
                 <div className="w-3/4 p-4">
                     <h2 className="text-2xl font-bold mb-4">Judul Pelatihan</h2>
                     <p className="text-gray-700">
-                        fersdftgyrdytyhffg5rtyh6rfgtrf
+                        RAFFA GANTENG UNLIMITED
                     </p>
                     <br />
                     <br />
@@ -43,7 +46,7 @@ const Bpelatihan = () => {
                         <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
                             Lihat Materi
                         </button>
-                        <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded ml-8">
+                        <button onClick={() => Navigate('/#')} className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded ml-8">
                             Detail
                         </button>
                     </div>

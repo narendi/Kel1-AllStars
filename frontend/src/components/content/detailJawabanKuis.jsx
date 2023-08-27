@@ -3,8 +3,8 @@ import React from "react";
 const Djk = () => {
   return (
     <>
-      <div className="pt-3 pl-3">
-        <p className="font-bold text-xl mb-7 mt-10">Detail Jawaban Kuis</p>
+      <div className=" pl-3">
+        <p className="font-bold text-xl mb-7 mt-3">Detail Jawaban Kuis</p>
 
         <div className="grid grid-cols-2 gap-4">
           <div
@@ -27,14 +27,14 @@ const Djk = () => {
             className="border-black border-2 "
             style={{
               width: "55%",
-              height: "100%",
+              height: "70%",
               justifySelf: "end",
-              alignSelf: "end",
+              alignSelf: "start",
               padding: "0 5px",
             }}
           >
-            <div className="ml-4 mr-4">
-              <p className="border-b-2 border-black border-black-600 mt-2">
+            <div className="ml-4 mr-4" >
+              <p className="border-b-2 border-black border-black-600 mt-2 mb-1">
                 Detail Kuis
               </p>
               <p>Pelatihan: Lorem Ipsum</p>
@@ -50,12 +50,12 @@ const Djk = () => {
         >
           <p className="ml-3 mt-2">
             Judul pertanyaan <br /> <br />
-            Pertanyaan A <br />
+            Pertanyaan B <br />
             <br />
             <br />
-            Jawaban dipilih: A <br />
-            Jawaban Benar: A <br /> <br />
-            Perolehan: 50.00
+            Jawaban dipilih: C <br />
+            Jawaban Benar: D <br /> <br />
+            Perolehan: 0.00
             <p className="ml-20">Bobot soal: 50.00</p>
           </p>
           <br />
