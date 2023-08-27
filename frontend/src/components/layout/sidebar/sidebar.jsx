@@ -7,7 +7,7 @@ const SidebarProfile = ({ activeMenu, setActiveMenu, userData }) => {
     { title: "Pelatihan saya", link: "/DPS" },
     { title: "Sertifikat", link: "/SR" },
     { title: "Payment history", link: "/payment" },
-    { title: "Akun", link: "#" },
+    { title: "Akun", link: "/akunpage" },
   ];
 
   return (

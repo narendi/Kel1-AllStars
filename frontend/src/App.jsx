@@ -19,9 +19,8 @@ import Pengetahuan from "./pages/registrasiPNG";
 import SidebarProfile from "./components/layout/sidebar/sidebar";
 import DashboardProfile from "./pages/dashboard";
 import SertifikatProfile from "./pages/sertifikat";
-import Login from "./components/login/login";
 import Signup from "./components/login/daftar";
-import Lojin from "./components/lojin/lojin";
+import Login from "./components/lojin/login";
 import Registrasi from "./components/lojin/Registrasi";
 import Pembayaran from "./components/HalamanPembayaran/Pembayaran";
 import BankTransfer from "./components/HalamanPembayaran/BankTransfer";
@@ -31,6 +30,9 @@ import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
 import Payment from "./components/content/payment";
 import PaymentHistory from "./pages/paymenhistory";
+import Akun from "./components/content/akun";
+import AkunPage from "./pages/akun";
+import Password from "./components/content/password";
 
 function App() {
   return (
@@ -46,12 +48,13 @@ function App() {
         <Route path="/payment" element={<PaymentHistory />} />
         <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
-        <Route path="/login" />
+        <Route path="/akunpage" element={<AkunPage />} />
         //Route Components
         <Route path="/pay" element={<Payment />} />
+        <Route path="/password" element={<Password />} />
         <Route path="/tr" element={<TransactionBox />} />
         <Route path="/coment" element={<Ulasan />} />
-        <Route path="/lg" element={<Login />} />
+        <Route path="/akun" element={<Akun />} />
         <Route path="/daftar" element={<Signup />} />
         <Route path="/sidebar" element={<SidebarProfile />} />
         <Route path="/detail/:id" element={<DetailPelatihan />} />
@@ -66,7 +69,7 @@ function App() {
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
         <Route path="/DPel" element={<DPelatihan />} />
-        <Route path="/lojin" element={<Lojin />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/registrasi" element={<Registrasi />} />
         <Route path="/pembayaran" element={<Pembayaran />} />
         <Route path="/banktransfer" element={<BankTransfer />} />
