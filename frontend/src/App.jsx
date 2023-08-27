@@ -28,6 +28,8 @@ import Ewallet from "./components/HalamanPembayaran/E-wallet";
 import DPelatihan from "./pages/DashPelatihan";
 import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
+import IsiPelatihan from "./pages/isipelatihan";
+import Isipengetahuan from "./components/content/isipengetahuan";
 import Payment from "./components/content/payment";
 import PaymentHistory from "./pages/paymenhistory";
 import Akun from "./components/content/akun";
@@ -38,6 +40,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        //Route pages
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<HomeLogin />} />
         <Route path="/All" element={<Allkategori />} />
@@ -49,6 +52,8 @@ function App() {
         <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
         <Route path="/akunpage" element={<AkunPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/isipelatihan" element={<IsiPelatihan />} />
         //Route Components
         <Route path="/pay" element={<Payment />} />
         <Route path="/password" element={<Password />} />
@@ -69,13 +74,13 @@ function App() {
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
         <Route path="/DPel" element={<DPelatihan />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/registrasi" element={<Registrasi />} />
         <Route path="/pembayaran" element={<Pembayaran />} />
         <Route path="/banktransfer" element={<BankTransfer />} />
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
+        <Route path="/content-isi-pengetahuan" element={<Isipengetahuan />} />
       </Routes>
     </BrowserRouter>
   );
