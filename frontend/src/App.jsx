@@ -31,6 +31,7 @@ import Creditcard from "./components/HalamanPembayaran/Creditcard";
 import Edit from "./components/registrasipengetahuan/Edit";
 import Payment from "./components/content/payment";
 import PaymentHistory from "./pages/paymenhistory";
+import Riwayat from "./components/IsiPelatihan/RiwayatKuis";
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
+        <Route path="/rkuis" element={<Riwayat />} />
       </Routes>
     </BrowserRouter>
   );
