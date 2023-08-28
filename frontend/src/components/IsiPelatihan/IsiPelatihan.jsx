@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import Bpelatihan from "./Border";
 import PelatihanS from "./PelatihanSelesai";
 import PelatihanB from "./PelatihanBerjalan";
+import DetailP from "../DetailPelatihan/Detail";
+
 
 const IPelatihan = () => {
     const [activeContent, setActiveContent] = useState("semua");
+    const [showDetail, setShowDetail] = useState(false);
+  
 
     return (
         <>
