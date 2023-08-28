@@ -32,11 +32,10 @@ import IsiPelatihan from "./pages/isipelatihan";
 import Isipengetahuan from "./components/content/isipengetahuan";
 import Payment from "./components/content/payment";
 import PaymentHistory from "./pages/paymenhistory";
-import Riwayat from "./components/IsiPelatihan/RiwayatKuis";
+import Riwayat from "./pages/Riwayat";
 import Akun from "./components/content/akun";
 import AkunPage from "./pages/akun";
 import Password from "./components/content/password";
-
 
 function App() {
   return (
@@ -50,6 +49,7 @@ function App() {
         <Route path="/SR" element={<SertifikatProfile />} />
         <Route path="/DP" element={<DashboardProfile />} />
         <Route path="/DPS" element={<DPelatihan />} />
+        <Route path="/rkuis" element={<Riwayat />} />
         <Route path="/payment" element={<PaymentHistory />} />
         <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
@@ -82,7 +82,6 @@ function App() {
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
-        <Route path="/rkuis" element={<Riwayat />} />
         <Route path="/content-isi-pengetahuan" element={<Isipengetahuan />} />
       </Routes>
     </BrowserRouter>
