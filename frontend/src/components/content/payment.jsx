@@ -48,7 +48,7 @@ const Payment = () => {
     <>
       <h1 className="font-extrabold text-2xl mb-8">Payment History</h1>
       <div className="flex mb-3 ">
-        <div className="shadow-md bg-white px-16 py-2 rounded-md hover my-1 hover:bg-gray-100">
+        <div className="shadow-md bg-white px-16 py-2 rounded-md my-1 hover:bg-gray-100">
           <Dropdown
             className="mt-10"
             menu={{
@@ -75,7 +75,7 @@ const Payment = () => {
         </div>
       </div>
 
-      <div className="border ml-4 w-full h-52 mt-11 bg-white">
+      <div className="border  w-full h-52 mt-11 bg-white">
         <div className="flex">
           <img src="/assets/hacker.jpg" className="w-44 h-44 my-3 ml-4" />
           <div className="flex-col mt-3 ml-4">
@@ -116,7 +116,7 @@ const Payment = () => {
         </div>
       </div>
 
-      <div className="border ml-4 w-full h-52 mt-11 bg-white">
+      <div className="border w-full h-52 mt-11 bg-white">
         <div className="flex">
           <img src="/assets/hacker.jpg" className="w-44 h-44 my-3 ml-4" />
           <div className="flex-col mt-3 ml-4">
@@ -157,7 +157,7 @@ const Payment = () => {
         </div>
       </div>
 
-      <div className="border ml-4 w-full h-52 mt-11 bg-white">
+      <div className="border w-full h-52 mt-11 bg-white">
         <div className="flex">
           <img src="/assets/hacker.jpg" className="w-44 h-44 my-3 ml-4" />
           <div className="flex-col mt-3 ml-4">
