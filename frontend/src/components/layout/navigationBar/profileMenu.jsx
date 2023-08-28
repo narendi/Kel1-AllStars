@@ -37,7 +37,7 @@ const ProfileMenu = () => {
     {
       label: "Sertifikat",
       icon: AcademicCapIcon,
-      path: "/sertifikat",
+      path: "/SR",
     },
     {
       label: "Logout",
