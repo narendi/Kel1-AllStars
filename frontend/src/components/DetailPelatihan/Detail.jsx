@@ -68,7 +68,7 @@ const DetailP = () => {
           </div>
         </div>
       </div>
-      <div className="mt-5 flex justify-end">
+      <div className="mt-4 mr-4 flex justify-end ">
         <Pagination total={500} />
       </div>
     </div>
