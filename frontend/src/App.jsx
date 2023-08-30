@@ -51,6 +51,7 @@ function App() {
         <Route path="/SR" element={<SertifikatProfile />} />
         <Route path="/DP" element={<DashboardProfile />} />
         <Route path="/DPS" element={<DPelatihan />} />
+        <Route path="/rkuis" element={<Riwayat />} />
         <Route path="/payment" element={<PaymentHistory />} />
         <Route path="/dashboard" element={<DashboardProfile />} />
         <Route path="/pelatihan" element={<Pelatihan />} />
