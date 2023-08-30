@@ -32,10 +32,12 @@ import IsiPelatihan from "./pages/isipelatihan";
 import Isipengetahuan from "./components/content/isipengetahuan";
 import Payment from "./components/content/payment";
 import PaymentHistory from "./pages/paymenhistory";
+import Riwayat from "./components/IsiPelatihan/RiwayatKuis";
 import Akun from "./components/content/akun";
 import AkunPage from "./pages/akun";
 import Password from "./components/content/password";
 import Detailjawaban from "./pages/detailjawaban";
+
 
 function App() {
   return (
@@ -81,6 +83,7 @@ function App() {
         <Route path="/Ewallet" element={<Ewallet />} />
         <Route path="/Creditcard" element={<Creditcard />} />
         <Route path="/edit" element={<Edit />} />
+        <Route path="/rkuis" element={<Riwayat />} />
         <Route path="/content-isi-pengetahuan" element={<Isipengetahuan />} />
         <Route path="/jdk" element={<Detailjawaban />} />
       </Routes>
