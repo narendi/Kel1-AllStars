@@ -1,18 +1,20 @@
 import React from "react";
 import { Pagination } from "antd";
-
+import { Link } from "react-router-dom";
 
 const DetailP = () => {
   return (
     <div>
       <p className="font-bold text-2xl ml-6 mt-6">Orang Gila</p>
       <div className="bg-white w-[70rem] h-[25rem] rounded-lg border border-gray-300 p-6 py-4 mt-6 mx-4 max-w-full flex">
-      <div>
+        <div>
           <div className="flex justify-between items-start">
             <div>
-              <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded">
-                Riwayat Kuis
-              </button>
+              <Link to="/rkuis">
+                <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded">
+                  Riwayat Kuis
+                </button>
+              </Link>
             </div>
             <div>
               <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded">
@@ -58,21 +60,19 @@ const DetailP = () => {
                 ></div>
               </div>
               <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-200 mt-8">
-              <div
+                <div
                   style={{ width: "100%" }}
                   className="shadow-none flex flex-col text-right whitespace-nowrap text-white justify-center bg-black"
-                >
-                </div>
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-5 flex justify-end">
+      <div className="mt-4 mr-4 flex justify-end ">
         <Pagination total={500} />
       </div>
     </div>
-    
   );
 };
 

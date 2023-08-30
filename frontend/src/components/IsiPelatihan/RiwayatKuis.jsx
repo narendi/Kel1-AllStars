@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const RiwayatKuis = () => {
   const [expanded, setExpanded] = useState(false);
@@ -54,9 +55,9 @@ const RiwayatKuis = () => {
             </div>
             <div className="m-4">
               <p>16 Januari 2023 03.25</p>
-              <a href="" className="text-sm">
-                Lihat Detail Kuis
-              </a>
+              <Link to="/jdk">
+                <p className="text-sm">Lihat Detail Kuis</p>
+              </Link>
             </div>
             <div className="flex ml-auto my-4 h-16 w-16 mr-6 justify-center items-center border border-black rounded-full">
               <p className="flex justify-center items-center">100</p>
@@ -69,9 +70,9 @@ const RiwayatKuis = () => {
             </div>
             <div className="m-4">
               <p>10 Januari 2023 03.25</p>
-              <a href="" className="text-sm">
-                Lihat Detail Kuis
-              </a>
+              <Link to="/jdk">
+                <p className="text-sm">Lihat Detail Kuis</p>
+              </Link>
             </div>
             <div className="flex ml-auto mt-4 h-16 w-16 mr-6 justify-center items-center border border-black rounded-full">
               <p className="flex justify-center items-center">50</p>

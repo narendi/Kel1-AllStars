@@ -2,6 +2,7 @@ import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import { FaSearch } from "react-icons/fa";
+import { Pagination } from "antd";
 
 const items = [
   {
@@ -179,6 +180,9 @@ const Sertifikat = () => {
             Unduh Sertifikat
           </button>
         </div>
+      </div>
+      <div className="mt-4 mr-4 flex justify-end ">
+        <Pagination total={500} />
       </div>
     </>
   );

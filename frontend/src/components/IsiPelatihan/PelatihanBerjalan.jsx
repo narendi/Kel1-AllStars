@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const PelatihanB = () => {
     return (
         <div className="container mx-auto mt-6">
@@ -44,9 +44,11 @@ const PelatihanB = () => {
             <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
                 Lihat Materi
             </button>
+            <Link to="/detaill">
             <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded ml-8">
                 Detail
             </button>
+            </Link>
         </div>
         </div>
         </div>

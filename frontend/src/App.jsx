@@ -38,6 +38,7 @@ import Akun from "./components/content/akun";
 import AkunPage from "./pages/akun";
 import Password from "./components/content/password";
 import Detailjawaban from "./pages/detailjawaban";
+import Detailpage from "./pages/Detailpage";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         <Route path="/akunpage" element={<AkunPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/isipelatihan" element={<IsiPelatihan />} />
+        <Route path="/detaill" element={<Detailpage />} />
         //Route Components
         <Route path="/pay" element={<Payment />} />
         <Route path="/password" element={<Password />} />
