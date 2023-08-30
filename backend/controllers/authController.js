@@ -7,12 +7,24 @@ import { Op } from "sequelize";
 const authController = {
   register: async (req, res) => {
     try {
-      const { username, email, password } = req.body;
+      const {
+        username,
+        email,
+        password,
+        no_telepon,
+        tanggal_lahir,
+        negara,
+        domisili,
+      } = req.body;
       const hashedPassword = await bcrypt.hash(password, 10);
       const user = await User.create({
         username,
         email,
         password: hashedPassword,
+        no_telepon,
+        tanggal_lahir,
+        negara,
+        domisili,
       });
       res.status(201).json({ message: "User registered successfully", user });
     } catch (error) {
@@ -52,8 +64,6 @@ const authController = {
     }
   },
   logout: (req, res) => {
-    // You might perform any necessary logout actions here
-    // For example, invalidating tokens or session handling
     res.status(200).json({ message: "Logout successful" });
   },
 

@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import Dropdown from "./dropdown";
 import { Avatar, Button, Typography } from "@material-tailwind/react";
 import LanguageDropdown from "./languageDropdown";
+import { Link } from "react-router-dom";
 import Toogle_notif from "../../notification/toogle_notif";
+import Login from "../../lojin/login";
 // import { BellIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
 
 const Navbarguest = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoginPopupOpen, setLoginPopupOpen] = useState(false); // State untuk popup login
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +27,7 @@ const Navbarguest = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div>
       <nav
@@ -83,39 +87,31 @@ const Navbarguest = () => {
               </div>
             </form>
           </div>
-        <ul className="flex flex-row font-medium rounded-lg ml-auto bg-white dark:bg-gray-900">
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:text-white"
-              aria-current="page"
-            >
-              Beranda
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white"
-            >
-              Pelatihan
-            </a>
-          </li>
-          <li>
-            <LanguageDropdown />
-          </li>
-          <li>
-              <Toogle_notif />
-          </li>
-          <li>
+          <ul className="flex flex-row font-medium rounded-lg ml-auto bg-white dark:bg-gray-900">
+            <li>
               <a
-              href="/Home"
-              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white"
-            >
-              Login
-            </a>
-          </li>
-        </ul>
+                href="#"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:text-white"
+                aria-current="page"
+              >
+                Beranda
+              </a>
+            </li>
+
+            <li>
+              <LanguageDropdown />
+            </li>
+            <li>
+              <Toogle_notif />
+            </li>
+            <li>
+              <Link to="/login">
+                <button className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:text-blue-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white">
+                  Login
+                </button>
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>

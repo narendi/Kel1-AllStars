@@ -46,6 +46,9 @@ const ProfileMenu = () => {
     },
   ];
 
+  const profilePhotoUrl = localStorage.getItem("profilePhotoUrl");
+  const userName = localStorage.getItem("userName");
+
   return (
     <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
       <MenuHandler>
@@ -59,10 +62,10 @@ const ProfileMenu = () => {
             size="sm"
             alt="candice wu"
             className="border border-blue-500 p-0.5"
-            src="./assets/profileUser.png"
+            src={profilePhotoUrl}
           />
-          <div className="text-white">
-            <h2>Sidiq</h2>
+          <div className="text-black">
+            <h2>{userName}</h2>
           </div>
           <ChevronDownIcon
             strokeWidth={2.5}

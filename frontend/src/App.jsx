@@ -19,9 +19,8 @@ import Pengetahuan from "./pages/registrasiPNG";
 import SidebarProfile from "./components/layout/sidebar/sidebar";
 import DashboardProfile from "./pages/dashboard";
 import SertifikatProfile from "./pages/sertifikat";
-import Signup from "./components/login/daftar";
 import Login from "./components/lojin/login";
-import Registrasi from "./components/lojin/Registrasi";
+import Daftar from "./components/lojin/Registrasi";
 import Pembayaran from "./components/HalamanPembayaran/Pembayaran";
 import BankTransfer from "./components/HalamanPembayaran/BankTransfer";
 import Ewallet from "./components/HalamanPembayaran/E-wallet";
@@ -60,7 +59,7 @@ function App() {
         <Route path="/tr" element={<TransactionBox />} />
         <Route path="/coment" element={<Ulasan />} />
         <Route path="/akun" element={<Akun />} />
-        <Route path="/daftar" element={<Signup />} />
+        {/* <Route path="/daftar" element={<Daftar />} /> */}
         <Route path="/sidebar" element={<SidebarProfile />} />
         <Route path="/detail/:id" element={<DetailPelatihan />} />
         <Route path="/profilmenu" element={<ProfileMenu />} />
@@ -74,7 +73,7 @@ function App() {
         <Route path="/card" element={<Kateg />} />
         <Route path="/rrq" element={<Pengetahuan />} />
         <Route path="/DPel" element={<DPelatihan />} />
-        <Route path="/registrasi" element={<Registrasi />} />
+        <Route path="/registrasi" element={<Daftar />} />
         <Route path="/pembayaran" element={<Pembayaran />} />
         <Route path="/banktransfer" element={<BankTransfer />} />
         <Route path="/Ewallet" element={<Ewallet />} />

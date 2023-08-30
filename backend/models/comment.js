@@ -1,6 +1,6 @@
 // models/Comment.js
 import { Sequelize } from "sequelize";
-import db from "../config/database.js";
+import db from "../config/Database.js";
 import Reply from "./reply.js"; // Impor model Reply
 
 const { DataTypes } = Sequelize;

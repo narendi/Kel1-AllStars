@@ -8,20 +8,8 @@ const TransactionBox = () => {
   const fixedPrice = "100.000";
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    if (username === "user123" && password === "pass123") {
-      setIsLogin(true);
-      setIsModalVisible(false);
-      navigate("/rrq");
-    } else {
-      alert("Username atau password salah!");
-    }
-  };
-
   const handleBuy = () => {
-    alert(`Anda telah membeli dengan harga Rp. ${fixedPrice}.`);
+    navigate("/rrq");
   };
 
   return (
@@ -60,34 +48,12 @@ const TransactionBox = () => {
             <div className="mr-2 font-extrabold">Rp. {fixedPrice}</div>
           </div>
 
-          {isLogin ? (
-            <button
-              className="bg-red-600 hover:bg-red-500 text-white rounded-md w-[303px] h-[44px] mt-8"
-              onClick={handleBuy}
-            >
-              Beli sekarang
-            </button>
-          ) : (
-            <button
-              className="bg-red-600 hover:bg-red-500 text-white rounded-md w-[303px] h-[44px] mt-8"
-              onClick={() => setIsModalVisible(true)}
-            >
-              Beli sekarang
-            </button>
-          )}
-
-          <Modal
-            title="Login"
-            visible={isModalVisible}
-            onOk={handleLogin}
-            onCancel={() => setIsModalVisible(false)}
+          <button
+            className="bg-red-600 hover:bg-red-500 text-white rounded-md w-[303px] h-[44px] mt-8"
+            onClick={handleBuy}
           >
-            {/* Form login */}
-            <div>
-              <input id="username" type="text" placeholder="Username" />
-              <input id="password" type="password" placeholder="Password" />
-            </div>
-          </Modal>
+            Beli sekarang
+          </button>
         </div>
       </div>
     </>
