@@ -32,7 +32,7 @@ import IsiPelatihan from "./pages/isipelatihan";
 import Isipengetahuan from "./components/content/isipengetahuan";
 import Payment from "./components/content/payment";
 import PaymentHistory from "./pages/paymenhistory";
-import Riwayat from "./components/IsiPelatihan/RiwayatKuis";
+import Riwayat from "./pages/Riwayat";
 import DetailP from "./components/DetailPelatihan/Detail";
 import Akun from "./components/content/akun";
 import AkunPage from "./pages/akun";
