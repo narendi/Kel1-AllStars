@@ -42,6 +42,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        
         //Route pages
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<HomeLogin />} />
@@ -56,6 +57,7 @@ function App() {
         <Route path="/akunpage" element={<AkunPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/isipelatihan" element={<IsiPelatihan />} />
+
         //Route Components
         <Route path="/pay" element={<Payment />} />
         <Route path="/password" element={<Password />} />

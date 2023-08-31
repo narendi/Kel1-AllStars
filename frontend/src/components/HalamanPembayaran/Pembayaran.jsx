@@ -59,7 +59,7 @@ return(
             <a href="" className="w-3 h-3 rounded-full absolute top-1 left-96 transition duration-300 transform hover:scale-110 hover:bg-gray-300">
                <FaChevronRight size={14} color="black" />
             </a>
-            <hr className="border border-[0.1px] absolute top-0 border-gray-900 w-full  bg-gray-900 " />
+            <hr className="border-[0.1px] absolute top-0 border-gray-900 w-full  bg-gray-900 " />
             <p class="text-xs  font-semibold absolute top-2 left-3">E-wallets</p>
             <div className="flex space-x-3 absolute top-[20px] left-3">
             <a href="Ewallet">
