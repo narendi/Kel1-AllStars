@@ -26,7 +26,7 @@ const Signup = () => {
       });
 
       if (response.status === 201) {
-        navigate("/lg");
+        navigate("/lojin");
       }
     } catch (error) {
       setErrorMessage("An error occurred during registration.");

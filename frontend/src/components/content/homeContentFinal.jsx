@@ -7,13 +7,8 @@ import {
   CardHeader,
   CardBody,
   Typography,
-  Chip,
   Button,
 } from "@material-tailwind/react";
-// import Card from "../kontenAll/card";
-// import Image1 from "/assets/hacker.jpg";
-// import Image2 from "/assets/fotopemandangan.jpg";
-// import Navbarguest from "../components/layout/navbar/navbarguest";
 
 const ContentAdminFinal = () => {
   const [newdata, setNewData] = useState([]);
