@@ -90,7 +90,6 @@ const Pembayaran = () => {
                 class="w-[55px] h-[55px]"
               />
             </a>
-<<<<<<< HEAD
           </div>
         </div>
         <div class="bg-gray-100 absolute top-64 left-0 w-full h-[65px] z-10 mx-auto">
@@ -102,18 +101,18 @@ const Pembayaran = () => {
           </a>
           <hr className="border-[0.1px] absolute top-0 border-gray-900 w-full  bg-gray-900 " />
           <p class="text-xs  font-semibold absolute top-2 left-3">E-wallets</p>
+          <div className="flex space-x-3 absolute top-[20px] left-3"></div>
+        </div>
+        <div class="bg-gray-100 absolute top-64 left-0 w-full h-[65px] z-10 mx-auto">
+          <a
+            href=""
+            className="w-3 h-3 rounded-full absolute top-1 left-96 transition duration-300 transform hover:scale-110 hover:bg-gray-300"
+          >
+            <FaChevronRight size={14} color="black" />
+          </a>
+          <hr className="border-[0.1px] absolute top-0 border-gray-900 w-full  bg-gray-900 " />
+          <p class="text-xs  font-semibold absolute top-2 left-3">E-wallets</p>
           <div className="flex space-x-3 absolute top-[20px] left-3">
-=======
-            </div>
-         </div>
-         <div class="bg-gray-100 absolute top-64 left-0 w-full h-[65px] z-10 mx-auto">
-            <a href="" className="w-3 h-3 rounded-full absolute top-1 left-96 transition duration-300 transform hover:scale-110 hover:bg-gray-300">
-               <FaChevronRight size={14} color="black" />
-            </a>
-            <hr className="border-[0.1px] absolute top-0 border-gray-900 w-full  bg-gray-900 " />
-            <p class="text-xs  font-semibold absolute top-2 left-3">E-wallets</p>
-            <div className="flex space-x-3 absolute top-[20px] left-3">
->>>>>>> deb3c8fc9d2b1d7b00c973a890266625a5043fd7
             <a href="Ewallet">
               <img
                 src="https://i.pinimg.com/originals/02/8b/92/028b92bb43a9f6c80e26c3ea403cb698.png"
