@@ -52,7 +52,6 @@ const Dpi = () => {
             <Tc />
           </div>
         </div>
-
         <div
           className=" border border-black ml-2 relative"
           style={{ height: "470px" }}
