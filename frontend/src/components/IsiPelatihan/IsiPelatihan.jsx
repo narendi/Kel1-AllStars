@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import Bpelatihan from "./Border";
+// import Bpelatihan from "./Border";
 import PelatihanS from "./PelatihanSelesai";
 import PelatihanB from "./PelatihanBerjalan";
 
-
 const IPelatihan = () => {
-
-    const [activeContent, setActiveContent] = useState("semua");
-    // const [showDetail, setShowDetail] = useState(false);
-    
-  
+  const [activeContent, setActiveContent] = useState("semua");
+  // const [showDetail, setShowDetail] = useState(false);
 
   return (
     <>
@@ -44,7 +40,7 @@ const IPelatihan = () => {
         <div className="mx-8">
           {activeContent === "semua" && (
             <>
-              <Bpelatihan />
+              {/* <Bpelatihan /> */}
               <PelatihanB />
               <PelatihanS />
             </>

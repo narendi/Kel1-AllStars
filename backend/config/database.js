@@ -5,6 +5,6 @@ const db = new Sequelize("db_nusalearning", "root", "", {
   dialect: "mysql",
 });
 
-export const JWT_SECRET = "bro123";
+// export const JWT_SECRET = "bro123";
 
 export default db;

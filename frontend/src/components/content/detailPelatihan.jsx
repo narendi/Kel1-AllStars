@@ -1,37 +1,176 @@
-import React, { useState, useEffect } from "react";iimport NavigationBar from "../layout/navigationBar/navigationBar";
+import React, { useState, useEffect } from "react";
+import NavigationBar from "../layout/navigationBar/navigationBar";
 import TransactionBox from "../kontenAll/transaksi";
-import { useNavigate } from "react-router-dom";
-import { Modal, Rate, Button } from "antd";
+import { Modal, Rate } from "antd";
 import axios from "axios";
 import Ulasan from "../kontenAll/ulasan";
 import FooterColumn from "../layout/footer/footer";
 
 const DetailPelatihan = () => {
-  // /onst [modalOpen, setModalOpen] = useState(false);
-  // /onst [reviews, setReviews] = useState([]);
-  // /onst [shownReviews, setShownReviews] = useState(2);
-  const [isLogin, setIsLogin] = useState(false);
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const fixedPrice = "100.000";
-  const navigate = useNavigate();
   const [newdata, setNewData] = useState([]);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [shownReviews, setShownReviews] = useState(2);
   const id = 1;
 
-  const handleBuy = () => {
-    navigate("/rrq");
-  };
-
   useEffect(() => {
-     const idToRetrieve = 1; // Replace with the ID you want
- axios
-      .get(`http://localhost:3100/detaill/${id}ToRetrieve`)
+    axios
+      .get("http://localhost:3100/detaill/all")
       .then((response) => {
-        setNewData([response.data]); // Wrap the response in an array to match your current mapping logic
+        setNewData(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
+
+  const reviews = [
+    {
+      name: "John Doe",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imageUrl: "/assets/hacker.jpg",
+      replies: [
+        {
+          name: "Jane Doe",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "John Doe",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+    },
+    {
+      name: "Mary Jane",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+  ];
+
+  const coment = [
+    {
+      name: "John Doe",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      imageUrl: "/assets/hacker.jpg",
+      replies: [
+        {
+          name: "Jane Doe",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum aliquet arcu, sit amet eleifend tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+        {
+          name: "John Doe",
+          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      ],
+    },
+    {
+      name: "Mary Jane",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+    {
+      name: "Peter Parker",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+
+    {
+      name: "Steve Roger",
+      imageUrl: "/assets/hacker.jpg",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      replies: [
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+        {
+          name: "Jane Doe",
+          content: "Reply from Jane Doe",
+        },
+      ],
+    },
+  ];
 
   return (
     <>
@@ -44,11 +183,9 @@ const DetailPelatihan = () => {
             <h1 className="font-extrabold text-2xl">Detail Pelatihan</h1>
           </div>
 
-          <div className="flex justify-between">
-            <div className="flex flex-col text-lg ml-12 mt-7">
-              <h2 className="font-bold">{item.judul}</h2>
-              <p className="text-gray-600">{item.desc_judul}</p>
-            </div>
+          <div className="flex flex-col text-lg ml-12 mt-7">
+            <h2 className="font-bold">{item.judul}</h2>
+            <p className="text-gray-600">{item.desc_judul}</p>
           </div>
 
           <div className="flex flex-col ml-12 mt-20">
@@ -112,6 +249,11 @@ const DetailPelatihan = () => {
                 <hr className=" border-black" />
                 <div className="font-bold text-lg mt-2 ml-3">Final Quis</div>
               </div>
+
+              <div className="w-[80%] h-full ml-3 p-4 bg-white shadow rounded border border-black">
+                <div className="w-full h-1/2 mb-2 p-4 bg-white shadow rounded border border-black"></div>
+                <div className="w-full h-1/2  p-4 bg-white shadow rounded border border-black"></div>
+              </div>
             </div>
           </div>
 
@@ -133,8 +275,15 @@ const DetailPelatihan = () => {
           <div className="flex flex-col text-lg ml-12 mt-7">
             <h2 className="font-bold">Ulasan</h2>
             <hr className="max-w-4xl border border-black" />
- 
-            <Ulasan />
+            {reviews.map((review, index) => (
+              <Ulasan
+                key={index}
+                imageUrl={review.imageUrl}
+                name={review.name}
+                content={review.content}
+                replies={review.replies}
+              />
+            ))}
           </div>
           <br />
 
@@ -169,15 +318,15 @@ const DetailPelatihan = () => {
                     </div>
                   </span>
                 </div>
-                {reviews.map((review, index) => (
+                {coment.slice(0, shownReviews).map((watch, index) => (
                   <Ulasan
                     key={index}
-                    imageUrl={review.imageUrl}
-                    name={review.user}
-                    content={review.comment}
-                    replies={review.replies}
+                    name={watch.name}
+                    imageUrl={watch.imageUrl}
+                    content={watch.content}
+                    replies={watch.replies}
                   />
-                ))}}
+                ))}
               </div>
 
               <div className="w-[332px]  h-[190px] p-4 bg-white border border-black flex flex-col mr-20 shadow rounded">
@@ -216,7 +365,6 @@ const DetailPelatihan = () => {
           <FooterColumn />
         </div>
       ))}
-
     </>
   );
 };
