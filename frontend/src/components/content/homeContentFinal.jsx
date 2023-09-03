@@ -86,7 +86,7 @@ const ContentAdminFinal = () => {
             <Typography color="gray" className="mb-8 font-normal">
               {item.description}
             </Typography>
-            <a href="#" className="inline-block">
+            {/* <a href="#" className="inline-block">
               <Button variant="text" className="flex items-center gap-5">
                 Baca Selengkapnya
                 <svg
@@ -104,7 +104,7 @@ const ContentAdminFinal = () => {
                   />
                 </svg>
               </Button>
-            </a>
+            </a> */}
           </CardBody>
         </Card>
       ))}

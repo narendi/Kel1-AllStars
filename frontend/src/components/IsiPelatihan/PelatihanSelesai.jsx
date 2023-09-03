@@ -41,13 +41,16 @@ const PelatihanS = () => {
           </div>
 
           <div className="mt-4 flex justify-right">
-            <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
-              Lihat Materi
-            </button>
+            <Link to="/isipelatihan">
+              <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+                Lihat Materi
+              </button>
+            </Link>
+
             <Link to="/detaill">
-            <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded ml-8">
+              <button className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-8 rounded ml-8">
                 Detail
-            </button>
+              </button>
             </Link>
           </div>
         </div>
